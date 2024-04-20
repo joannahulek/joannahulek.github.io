@@ -1,10 +1,21 @@
-interface Props{
-
+function NavElements() {
+    return(
+        <div className="collapse navbar-collapse" id="navbarTogglerElements">
+            <ul className="navbar-nav me-auto">
+                <a className="navbar-brand" href="#bio">About Me</a>
+                <a className="navbar-brand" href="#portfolio">Portfolio</a>
+                <a className="navbar-brand" href="#resume">Resume</a>
+                <a className="navbar-brand" href="#contact">Contact</a>
+            </ul>
+        </div>
+    )
 }
 
-function Navbar(){
+function Navbar() {
     return TogglerNav()
 }
+
+export default Navbar
 
 function TogglerNav (){
     return(
@@ -20,28 +31,3 @@ function TogglerNav (){
         </nav>
     )
 }
-
-function NavElements() {
-    return <div className="collapse navbar-collapse" id="navbarTogglerElements">
-        <a className="navbar-brand" href="#">Hidden brand</a>
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li className="nav-item">
-                <a className="nav-link" href="#">Link</a>
-            </li>
-            <li className="nav-item">
-                <a className="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-        </ul>
-    </div>;
-}
-
-
-
-
-
-
-
-export default Navbar
