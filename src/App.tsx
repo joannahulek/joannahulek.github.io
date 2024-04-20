@@ -14,10 +14,10 @@ function App() {
   return (
       <div className="content">
           {Navbar()}
-          <section id="#bio"><AboutMe bio={bio}/></section>
-          <section id="#portfolio">{Portfolio()}</section>
-          <section id="#cv"><Resume items={tableContent.Col}/></section>
-          <section id="#contact">{Contact()}</section>
+          <section id="bio"><AboutMe bio={bio}/></section>
+          <section id="portfolio">{Portfolio()}</section>
+          <section id="cv"><Resume items={tableContent.Col}/></section>
+          <section id="contact">{Contact()}</section>
           {Footer()}
       </div>
   );
