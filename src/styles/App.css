@@ -6,6 +6,17 @@
   border: none;
 }
 
+section{
+  margin: 20px;
+  padding: 20px;
+}
+
+img.mirror{
+    transform: rotateY(180deg);
+}
+
+
+
 @media (prefers-reduced-motion: reduce) {
 
 }
