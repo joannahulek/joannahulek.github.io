@@ -4,7 +4,7 @@ function Contact(){
             <div className="card-body">
                 <h5 className="card-title">Get in touch</h5>
 
-                <a href="https://www.linkedin.com/in/joannahulek/" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/joannahulek/" target="_blank" aria-label="LinkedIn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor"
                          className="bi bi-linkedin" viewBox="0 0 16 16">
                         <path
@@ -12,7 +12,7 @@ function Contact(){
                     </svg>
                 </a>
 
-                <a href="https://github.com/joannahulek" aria-label="Github">
+                <a href="https://github.com/joannahulek" target="_blank" aria-label="Github">
                     <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" fill="currentColor"
                          className="bi bi-github" viewBox="0 0 16 16">
                         <path
