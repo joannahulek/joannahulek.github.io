@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import AboutMe from "./components/Bio";
 import Portfolio from "./components/Portfolio";
 import Resume from "./components/CV";
+import Contact from "./components/Contact";
 import tableContent from "./components/content/CV.json"
 
 
@@ -15,6 +16,7 @@ function App() {
           <section id="#bio">{AboutMe()}</section>
           <section id="#portfolio">{Portfolio()}</section>
           <section id="#cv"><Resume items={tableContent.Col}/></section>
+          <section id="#contact">{Contact()}</section>
           {Footer()}
       </div>
   );
