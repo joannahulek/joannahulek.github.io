@@ -15,6 +15,10 @@ img.mirror{
     transform: rotateY(180deg);
 }
 
+.card{
+    border: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
 
 }

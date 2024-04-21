@@ -9,7 +9,7 @@ function AboutMe(props: Props){
         <div className="card">
             <div className="row g-0">
                 <div className="col-md-4">
-                    <img src={image} className="mirror rounded" width="40%" alt="JH" title="Joanna Dzierzbicka Fotografia" />
+                    <img src={image} className="mirror rounded" width="100%" alt="JH" title="Joanna Dzierzbicka Fotografia" />
                 </div>
                 <div className="col-md-8">
                     <div className="card-body">

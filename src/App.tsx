@@ -9,7 +9,6 @@ import Contact from "./components/Contact";
 import bio from "./components/content/Bio.json"
 import tableContent from "./components/content/CV.json"
 
-
 function App() {
   return (
       <div className="content">
