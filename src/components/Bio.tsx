@@ -7,20 +7,13 @@ interface Props {
 function AboutMe(props: Props){
     return(
         <div className="card">
-            <div className="row g-0">
-                <div className="col-md-4">
-                    <img src={image} className="mirror rounded" width="100%" alt="JH" title="Joanna Dzierzbicka Fotografia" />
-                </div>
-                <div className="col-md-8">
-                    <div className="card-body">
-                        <h5 className="card-title">Card title</h5>
-                        <p className="card-text"><big>{props.bio}</big></p>
-                        <p className="card-text">{props.bio}</p>
-                    </div>
+                <div className="card-body">
+                    <h5 className="card-title">About Me</h5>
+                    <p className="card-text">{props.bio}</p>
+                    <a href="#portfolio" className="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
-        </div>
-    )
-}
+            )
+            }
 
-export default AboutMe
+            export default AboutMe

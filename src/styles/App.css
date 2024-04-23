@@ -15,6 +15,10 @@ img.mirror{
     transform: rotateY(180deg);
 }
 
+img.frame-blur{
+    padding: 20px;
+}
+
 .card{
     border: none;
 }
