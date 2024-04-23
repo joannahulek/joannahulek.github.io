@@ -8,11 +8,13 @@ import Resume from "./components/CV";
 import Contact from "./components/Contact";
 import bio from "./components/content/Bio.json"
 import tableContent from "./components/content/CV.json"
+import Hero from "./components/Hero";
 
 function App() {
   return (
       <div className="content">
           {Navbar()}
+          <Hero />
           <section id="bio"><AboutMe bio={bio}/></section>
           <section id="portfolio">{Portfolio()}</section>
           <section id="cv"><Resume items={tableContent.Col}/></section>
