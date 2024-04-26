@@ -21,7 +21,7 @@ function App() {
           <section id="bio"><AboutMe bio={content.bio}/></section>
           <section id="portfolio">{Portfolio()}</section>
           <section id="cv"><Resume items={resume.Col}/></section>
-          <section id="contact">{Contact()}</section>
+          <section id="contact"><Contact links={links.main}/></section>
           {Footer()}
       </div>
   );

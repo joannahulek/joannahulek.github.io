@@ -3,5 +3,11 @@
   [
     ["https://www.linkedin.com/in/joannahulek/", "LinkedIn"],
     ["https://github.com/joannahulek", "GitHub"]
+  ],
+  "svg":
+  [
+    ["linkedin","https://www.linkedin.com/in/joannahulek/"],
+    ["github", "https://github.com/joannahulek"],
+    ["mailto", "joanna.hulek@gmail.com", "Joanna"]
   ]
 }
