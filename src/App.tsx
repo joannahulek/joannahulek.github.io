@@ -18,10 +18,10 @@ function App() {
           <Hero
               summary={content.summary}
               links={links.main}/>
-          <section id="bio"><AboutMe bio={content.bio}/></section>
+          <section id="bio"><AboutMe bio={content.bio} links={links.main}/></section>
           <section id="portfolio">{Portfolio()}</section>
           <section id="cv"><Resume items={resume.Col}/></section>
-          <section id="contact"><Contact links={links.main}/></section>
+          <section id="contact"><Contact/></section>
           {Footer()}
       </div>
   );
