@@ -1,4 +1,5 @@
 import image from "./images/JH_lifestyle_foto.jpg"
+import ContactSVG from "./ContactSVG";
 
 interface Props {
     summary: string[];
@@ -20,10 +21,7 @@ function Hero(props: Props){
                         ))}
                     </p>
                     <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                        {props.links.map((link) => (
-                            <a href={link[0]} type="button"
-                               className="btn btn-outline-secondary btn-lg px-4">{link[1]}</a>
-                        ))}
+                        {ContactSVG(64)}
                     </div>
                 </div>
                 <div className="col-10 col-sm-8 col-lg-4">
