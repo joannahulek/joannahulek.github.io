@@ -11,12 +11,12 @@ function Hero(props: Props){
             <div className="row align-items-center g-5 py-5">
                 <div className="col-lg-8">
                     <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-center">Joanna Hulek</h1>
-                    <h2 className="one_line_text">Frontend Developer & Agile Practitioner</h2>
+                    <h2 className="line_text">Frontend Developer & Agile Practitioner</h2>
                     <h2 className="line_broken">Frontend Developer</h2>
                     <h2 className="line_broken">& Agile Practitioner</h2>
                     <p className="lead">
                         {props.summary.map((paragraph) => (
-                            <big>{paragraph}</big>
+                            <div><big>{paragraph}</big></div>
                         ))}
                     </p>
                     <div className="d-grid gap-2 d-md-flex justify-content-md-start">

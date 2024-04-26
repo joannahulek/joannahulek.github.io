@@ -15,8 +15,10 @@ function App() {
   return (
       <div className="content">
           {Navbar()}
-          <Hero summary={content.Summary} links={links.Main}/>
-          <section id="bio"><AboutMe bio={content.Bio}/></section>
+          <Hero
+              summary={content.summary}
+              links={links.main}/>
+          <section id="bio"><AboutMe bio={content.bio}/></section>
           <section id="portfolio">{Portfolio()}</section>
           <section id="cv"><Resume items={resume.Col}/></section>
           <section id="contact">{Contact()}</section>
