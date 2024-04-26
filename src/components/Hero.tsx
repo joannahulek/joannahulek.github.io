@@ -15,11 +15,15 @@ function Hero(props: Props){
                     <h2 className="line_text">Frontend Developer & Agile Practitioner</h2>
                     <h2 className="line_broken">Frontend Developer</h2>
                     <h2 className="line_broken">& Agile Practitioner</h2>
-                    <p className="lead">
-                        {props.summary.map((paragraph) => (
-                            <div><big>{paragraph}</big></div>
-                        ))}
-                    </p>
+                    <section className="summary">
+                        <p>
+                            I'm addicted to dance and love being surrounded by plants and flowers. <br></br>
+                            I enjoy creating responsive websites and clear, easy-to-maintain solutions.
+                        </p>
+                        <p>
+                            Collaboration, knowledge sharing, and co-creating teams that <i>plays for one goal</i> are my passions. That's why the Agile mindset resonates so well with my own values
+                        </p>
+                    </section>
                     <div className="d-grid gap-2 d-md-flex justify-content-md-start">
                         {ContactSVG(64)}
                     </div>
