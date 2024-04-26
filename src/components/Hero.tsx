@@ -1,6 +1,7 @@
 import image from "./images/JH_lifestyle_foto.jpg"
 
 interface Props {
+    summary: string[];
     links: string[][];
 }
 
@@ -13,14 +14,15 @@ function Hero(props: Props){
                     <h2 className="one_line_text">Frontend Developer & Agile Practitioner</h2>
                     <h2 className="line_broken">Frontend Developer</h2>
                     <h2 className="line_broken">& Agile Practitioner</h2>
-                    <p className="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-                        world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
-                        responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <p className="lead">
+                        {props.summary.map((paragraph) => (
+                            <big>{paragraph}</big>
+                        ))}
+                    </p>
                     <div className="d-grid gap-2 d-md-flex justify-content-md-start">
                         {props.links.map((link) => (
                             <a href={link[0]} type="button"
                                className="btn btn-outline-secondary btn-lg px-4">{link[1]}</a>
-
                         ))}
                     </div>
                 </div>
@@ -30,7 +32,6 @@ function Hero(props: Props){
                 </div>
             </div>
         </div>
-
     )
 }
 
