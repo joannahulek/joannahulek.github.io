@@ -39,6 +39,10 @@ h1, h2, h3, h4 {
   color: var(--darkAccent);
 }
 
+.btn:hover{
+  background-color: var(--brightAccent);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
