@@ -4,5 +4,31 @@
             ["red", "#f00"],
             ["green", "#0f0"],
             ["blue","#00f"]
+          ],
+
+  "work":
+  [
+    [
+      ["JOB TITLE PLEACEHOLDER", "COMPANY PLEACEHOLDER", "DATES PLEACEHOLDER"],
+      ["THIS IS TEST WORKPLACE DESCRIPTION, DO NOT OVERRITE IT, DO NOT REMOVE TI. KEEP COMPLETEING YOUR CV ACCORDING TO THIS PATTERN"]
+    ],
+    [
+      ["Founder, Software Developer", "JoHu Apps", "Apr 2018 - Nov 2018"],
+      ["Start-up within the Akademickie Inkubatory Przedsiębiorczości (AIP).\nBrand created to implement ideas that emerged during my participation in the Android Basics Nanodegree by Google.\n\n • Creating, designing and implementation of mobile applications for Android (for versions Nougat, Oreo, Pie)."]
+    ]
+  ],
+
+  "education":
+          [
+            [{"degree": "Master's Degree"},
+              {"school": "Cracow University of Economics"},
+              {"dates": "2015"},
+              {"field": "Management"},
+              {"specialty": "International Marketing"}],
+            [{"degree": "bachelor's degree"},
+              {"school": "Cracow University of Economics"},
+              {"dates": "2012"},
+              {"field": "Information Technology and Econometrics"},
+              {"specialty": "Information economics"}]
           ]
 }
