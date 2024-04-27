@@ -1,15 +1,5 @@
-/* color palette */
-:root {
-  /* Color inspiration - base colors */
-  --PantoneGraniteGreen: #86a293;
-  --PantonePeachFuzz: #ffbe98;
+@import url('colors.css');
 
-  --mainBackground: white;
-  --brightAccent: #86a293;
-  --darkAccent: #586960;
-  --grayAccent: gray;
-  --contrastAccent: #ffbe98;
-}
 
 /* main tags styling */
 a {

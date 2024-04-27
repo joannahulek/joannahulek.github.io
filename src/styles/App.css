@@ -1,3 +1,6 @@
+@import url('colors.css');
+
+
 .content {
   margin: 0 5%;
 }
@@ -15,12 +18,10 @@ img.mirror{
     transform: rotateY(180deg);
 }
 
-img.frame-blur{
-    padding: 20px;
-}
-
-.summary{
-    padding: 30px 0;
+img.hero{
+    border: solid;
+    border-color: var(--darkAccent);
+    padding: 3px;
 }
 
 .card{
