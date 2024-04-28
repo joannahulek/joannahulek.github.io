@@ -33,7 +33,11 @@ function renderTable(title:string, items:string[][][]) {
                             </tr>
                             </thead>
                             <tr>
-                                <td colSpan={2}>{item[1][0]}</td>
+                                <td colSpan={2}><p></p>
+                                    {item[1].map((line)=>(
+                                        <p><small>{line}</small></p>
+                                    ))}
+                                </td>
                             </tr>
                         </table>
                     )
