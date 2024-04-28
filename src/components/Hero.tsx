@@ -15,11 +15,9 @@ function Hero(props: Props){
                     <h2 className="line_text">Frontend Developer & Agile Practitioner</h2>
                     <h2 className="line_broken">Frontend Developer</h2>
                     <h2 className="line_broken">& Agile Practitioner</h2>
-                    <section>
                         <img src={image} className="hero mx-lg-auto img-fluid d-block d-md-none" alt="Joanna Hulek"
                          title="by Joanna Dzierzbicka Fotografia" width="100%"
                          loading="lazy"/>
-                    </section>
                     <section>
                         <p>
                             I'm <b>addicted to dance</b> and love being surrounded by plants and flowers. <br></br>
