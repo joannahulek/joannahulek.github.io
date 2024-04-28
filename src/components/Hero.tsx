@@ -1,4 +1,4 @@
-import image from "./images/JH_lifestyle_foto.jpg"
+import image from "./images/hero_photo.jpg";
 import ContactSVG from "./ContactSVG";
 
 interface Props {
