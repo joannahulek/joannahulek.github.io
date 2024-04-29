@@ -18,10 +18,6 @@ img.mirror{
     transform: rotateY(180deg);
 }
 
-.card{
-    border: none;
-}
-
 h2.line_text {
     text-align: center;
     display: block;
@@ -29,6 +25,10 @@ h2.line_text {
 h2.line_broken {
     text-align: center;
     display: none;
+}
+
+row-cols-2 col:first-child{
+  width: 250px;
 }
 
 @media only screen and (max-width:1600px){
