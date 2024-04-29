@@ -5,26 +5,25 @@ interface Props {
 
 function Resume (props: Props) {
     return (
-        <>
+        <div>
+            <hr></hr>
             {renderTable("Work Experience", props.work)}
+            <hr></hr>
             {renderTable("Education", props.education)}
-        </>
+            <hr></hr>
+        </div>
     )
 }
 
 export default Resume
 
 function renderTable(title:string, items:string[][][]) {
-    return <table className="table">
-        <tr>
-            <thead>
-                <th>{title}</th>
-            </thead>
-            <td>
-                {items.map((item) => (
-                        <table className="table">
+    return <div className="row">
+        <div className="col"><h2>{title}</h2></div>
+        <div className="col-9">{items.map((item) => (
+                <table className="table">
                             <thead>
-                            <tr>
+                    <tr>
                                 <th colSpan={2}>{item[0][0]}</th>
                             </tr>
                             <tr>
@@ -43,7 +42,7 @@ function renderTable(title:string, items:string[][][]) {
                     )
                 )
                 }
-            </td>
-        </tr>
-    </table>;
+                </div>
+
+    </div>;
 }
