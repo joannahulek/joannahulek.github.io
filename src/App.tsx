@@ -10,6 +10,7 @@ import Hero from "./components/Hero";
 import content from "./components/content/content.json"
 import resume from "./components/content/CV.json"
 import links from "./components/content/links.json"
+import CV2 from './components/v2_CV/CV2';
 
 function App() {
   return (
@@ -20,7 +21,10 @@ function App() {
               links={links.main}/>
           <section id="bio"><AboutMe bio={content.bio} links={links.main}/></section>
           <section id="portfolio">{Portfolio()}</section>
-          <section id="cv"><Resume work={resume.work} education={resume.education} /></section>
+
+          <section id="cv">
+            {CV2()}
+            <Resume work={resume.work} education={resume.education} /></section>
           <section id="contact"><Contact/></section>
           {Footer()}
       </div>
