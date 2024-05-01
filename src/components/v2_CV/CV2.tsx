@@ -7,20 +7,23 @@ type CvElement = {
     description: ReactElement;
 }
 
-const ppp: CvElement = {
-    label: "aa",
-    company:"bb",
-    time: "cc",
-    description: (<div><h1>ddd</h1></div>)
+const iie: CvElement = {
+    label: "Information Technology and Econometrics",
+    company:"Cracow University of Economics",
+    time: "2007-2012",
+    description: (<p>
+        Bachelor's degree<br></br>
+        specialty: Information economics
+        </p>)
 }
 
 function CV2 () {
     return (
         <div>
             <hr></hr>
-            {renderTable("Work Experience", [ppp,ppp])}
+            {renderTable("Work Experience", [iie,iie])}
             <hr></hr>
-            {renderTable("Education", [ppp])}
+            {renderTable("Education", [iie])}
             <hr></hr>
         </div>
     )
