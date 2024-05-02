@@ -1,5 +1,3 @@
-import image from "./images/JH_lifestyle_foto.jpg"
-
 interface Props {
     bio: string[]
     links: string[][];

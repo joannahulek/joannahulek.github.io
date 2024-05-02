@@ -8,7 +8,7 @@ interface Props {
 
 function Hero(props: Props){
     return(
-        <div className="container col-xxl-8 px-4 py-5">
+        <div className="container col-xxl-10 px-4 py-5">
             <div className="row align-items-center g-5 py-5">
                 <div className="col-lg-9">
                     <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-center">Joanna Hulek</h1>
