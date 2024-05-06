@@ -1,5 +1,5 @@
 interface Props {
-    bio: string[]
+    bio: string[][]
     links: string[][];
 }
 
@@ -8,7 +8,9 @@ function AboutMe(props: Props){
         <div className="card">
                 <div className="card-body">
                     <h5 className="card-title">About Me</h5>
-                    <p className="card-text">{props.bio}</p>
+                    <div className="card-text">
+                        {props.bio.map((paragraph)=>(<p>{paragraph}</p>))}
+                    </div>
                     <div className="d-grid gap-2 d-md-flex justify-content-md-start">
                         {props.links.map((link) => (
                             <a href={link[0]} type="button"
