@@ -11,8 +11,16 @@ export function getWork(){
     return [ubs, johu, mercedes]
 }
 
+export function WorkMore(){
+    return [mercedes]
+}
+
 export function getEducation(){
     return [im, iie]
+}
+
+export function EduMore(){
+    return []
 }
 
 // CV Elements below:
