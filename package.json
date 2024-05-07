@@ -1,7 +1,7 @@
 {
-  "name": "react_resume",
+  "name": "joannahulek.github.io",
   "homepage": "https://joannahulek.github.io/",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -47,6 +47,14 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "author": "",
-  "license": "ISC"
+  "author": "JH",
+  "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joannahulek/joannahulek.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joannahulek/joannahulek.github.io/issues"
+  }
 }
