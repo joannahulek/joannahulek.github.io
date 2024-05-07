@@ -27,6 +27,10 @@ h2.line_broken {
     display: none;
 }
 
+p {
+    text-align: justify;
+}
+
 row-cols-2 col:first-child{
   width: 250px;
 }
@@ -40,6 +44,10 @@ td.companyName{
     h2.line_text { display: none; }
     h2.line_broken { display: block; }
 
+}
+
+div.biogram{
+    padding: 40px 20px;
 }
 
 @media (prefers-reduced-motion: reduce) {
