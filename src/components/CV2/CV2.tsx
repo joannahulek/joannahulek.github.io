@@ -55,14 +55,16 @@ function MoreElements(moreItems: CvElement[]){
     if (moreItems.length==0){return (<></>)}
     else {
         return (<>
-            <p className="d-inline-flex gap-1">
-                <button className="btn btn-outline-secondary btn-lg px-4" type="button" data-bs-toggle="collapse"
+                <button className="btn hide-me btn-outline-secondary btn-lg px-4" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                     Show more
                 </button>
-            </p>
             <div className="collapse" id="collapseExample">
                 {createElement(moreItems)}
+                <button className="btn btn-outline-secondary btn-lg px-4" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Show less
+                </button>
             </div>
         </>)
     }

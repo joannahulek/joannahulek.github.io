@@ -8,7 +8,7 @@ export type CvElement = {
 }
 
 export function getWork(){
-    return [ubs, johu, mercedes]
+    return [ubs, johu]
 }
 
 export function WorkMore(){

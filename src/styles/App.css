@@ -50,6 +50,8 @@ div.biogram{
     padding: 40px 20px;
 }
 
+.hide-me[aria-expanded="true"] {display: none;}
+
 @media (prefers-reduced-motion: reduce) {
 
 
