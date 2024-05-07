@@ -11,27 +11,72 @@ export function getWork(){
     return [ubs, johu]
 }
 
-export function WorkMore(){
-    return [mercedes]
+export function workMore(){
+    return [mercedes, rmf, viva, rolnik]
 }
 
 export function getEducation(){
     return [im, iie]
 }
 
-export function EduMore(){
+export function eduMore(){
+    return []
+}
+
+export function getSkills(){
+    return [dev, soft]
+}
+
+export function skillsMore(){
     return []
 }
 
 // CV Elements below:
 
+// Skills:
+
+const dev: CvElement = {
+    label: "Software Development",
+    company: "",
+    time: "",
+    description: (<p>
+        <ul>
+            <li>Javascript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Bootstrap</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>GIT, GitHub, GitLab</li>
+            <li>JSON</li>
+        </ul>
+    </p>)
+}
+
+const soft: CvElement = {
+    label: "Soft Skills",
+    company: "",
+    time: "",
+    description: (<p>
+        <ul>
+            <li>Agile</li>
+            <li>Kanban</li>
+            <li>Scrum</li>
+            <li>Public Speaking</li>
+        </ul>
+    </p>)
+}
+
+
+// Work items:
+
 const ubs: CvElement = {
     label: "Web Miner, Software engineer",
-    company:"UBS Business Solutions Poland sp. z o.o.",
+    company: "UBS Business Solutions Poland sp. z o.o.",
     time: "Dec 2018 - Present",
     description: (<>
-    <p>
-        Developing and providing full life cycle of web scraping robots with RPA tools and dedicated web scraping platforms based on Python (in 2018-2019) or Java Script (in 2024):
+        <p>
+            Developing and providing full life cycle of web scraping robots with RPA tools and dedicated web scraping platforms based on Python (in 2018-2019) or Java Script (in 2024):
         <ul>
             <li>collecting requirements, creating, testing and implementing robots</li>
             <li>writing documentation</li>
@@ -68,6 +113,8 @@ const johu: CvElement = {
     </>)
 }
 
+// Work more items:
+
 const mercedes: CvElement = {
     label: "Barista",
     company:"We Just Love Coffee",
@@ -79,9 +126,49 @@ const mercedes: CvElement = {
     </>)
 }
 
+const rmf: CvElement = {
+    label: "Internship in Marketing Department",
+    company:"Grupa RMF",
+    time: "Aug 2012 - Sep 2012",
+    description: (<>
+        <p>
+            Summer internship for the winners of the 2nd edition of the <i>Akademia Mediów RMF</i> project organized by the <i>Grupa RMF</i> and <i>Uniwersytet Ekonomiczny w Krakowie</i>.
+        </p><p>
+            Cooperation with the Marketing department as part of ongoing projects, in particular analysis of marketing data.
+        </p>
+    </>)
+}
+
+const viva: CvElement = {
+    label: "E-promotion & E-marketing Specialis",
+    company:"Vivalavita Sp. z o.o.",
+    time: "May 2011 - Jul 2011",
+    description: (<>
+        <p>
+
+        </p>
+    </>)
+}
+
+const rolnik: CvElement = {
+    label: "Trainee in Market Information Department",
+    company:"Małopolski Ośrodek Doradztwa Rolniczego Powiatowy Zespół Doradztwa Rolniczego w Tarnowie",
+    time: "Jul 2010 - Aug 2010",
+    description: (<>
+        <p>
+
+        </p>
+    </>)
+}
+
+
+
+// Education items:
+
+
 const im: CvElement = {
     label: "Management",
-    company:"Cracow University of Economics",
+    company:"Krakow University of Economics",
     time: "2012-2015",
     description: (<p>
         Master's degree<br></br>
@@ -91,7 +178,7 @@ const im: CvElement = {
 
 const iie: CvElement = {
     label: "Information Technology and Econometrics",
-    company:"Cracow University of Economics",
+    company:"Krakow University of Economics",
     time: "2007-2012",
     description: (<p>
         Bachelor's degree<br></br>

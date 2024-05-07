@@ -1,13 +1,22 @@
-import {getEducation, getWork, CvElement, WorkMore, EduMore} from "./CvContent";
+import {
+    getEducation,
+    getWork,
+    CvElement,
+    getSkills,
+    workMore,
+    eduMore, skillsMore
+} from "./CvContent";
 
 function CV2 () {
     return (
         <div>
             <hr></hr>
-            {renderTable("Work Experience", getWork(), WorkMore())}
+            {renderTable("Work Experience", getWork(), workMore())}
             <hr></hr>
-            {renderTable("Education", getEducation(), EduMore())}
+            {renderTable("Education", getEducation(), eduMore())}
             <hr></hr>
+            {renderTable("Skills", getSkills(), skillsMore())}
+
         </div>
     )
 }
