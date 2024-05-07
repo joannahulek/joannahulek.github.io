@@ -8,7 +8,7 @@ export type CvElement = {
 }
 
 export function getWork(){
-    return [ubs, johu]
+    return [ubs, johu, mercedes]
 }
 
 export function getEducation(){
@@ -57,6 +57,17 @@ const johu: CvElement = {
     </p><p>
       Creating, designing and implementation of mobile applications for Android (for versions Nougat, Oreo, Pie).
     </p>
+    </>)
+}
+
+const mercedes: CvElement = {
+    label: "Barista",
+    company:"We Just Love Coffee",
+    time: "May 2018 - Nov 2018",
+    description: (<>
+        <p>
+            Part-time job as a barista at the <i>Salon i Serwis Mercedes-Benz Sobiesław Zasada Automotive</i>.
+        </p>
     </>)
 }
 

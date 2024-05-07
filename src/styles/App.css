@@ -31,6 +31,10 @@ row-cols-2 col:first-child{
   width: 250px;
 }
 
+td.companyName{
+    width: 60%;
+}
+
 @media only screen and (max-width:1600px){
 
     h2.line_text { display: none; }

@@ -24,7 +24,7 @@ function renderTable(title:string, items:CvElement[]) {
                                 <th colSpan={2}>{item.label}</th>
                             </tr>
                             <tr>
-                                <td>{item.company}</td>
+                                <td className="companyName">{item.company}</td>
                                 <td>{item.time}</td>
                             </tr>
                             </thead>
