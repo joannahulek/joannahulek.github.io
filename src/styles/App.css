@@ -1,12 +1,11 @@
 @import url('colors.css');
 
-
 .content {
   margin: 0 5%;
 }
 
 .navbar-toggler {
-  border: none;
+    border: none;
 }
 
 section{
@@ -39,18 +38,23 @@ td.companyName{
     width: 60%;
 }
 
-@media only screen and (max-width:1600px){
-
-    h2.line_text { display: none; }
-    h2.line_broken { display: block; }
-
-}
 
 div.biogram{
     padding: 40px 20px;
 }
 
 .hide-me[aria-expanded="true"] {display: none;}
+
+button{
+
+}
+
+@media only screen and (max-width:1600px){
+
+    h2.line_text { display: none; }
+    h2.line_broken { display: block; }
+
+}
 
 @media (prefers-reduced-motion: reduce) {
 
