@@ -24,8 +24,8 @@ export default CV2
 
 function renderTable(title:string, items:CvElement[], moreItems:CvElement[]) {
     return <div className="row">
-        <div className="col"><h2>{title}</h2></div>
-        <div className="col-9">
+        <div className="col"><h3>{title}</h3></div>
+        <div className="col-10">
             {createElement(items)}
             {MoreElements(moreItems)}
         </div>

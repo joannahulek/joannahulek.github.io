@@ -1,6 +1,5 @@
 @import url('colors.css');
 
-
 /* main tags styling */
 a {
   color: var(--brightAccent);
@@ -17,14 +16,15 @@ h1, h2, h3, h4 {
   color: var(--darkAccent);
 }
 
-.bi{
-  padding: 12px;
-}
+p { text-align: justify; }
 
-.bi:hover{
-  color: var(--darkAccent);
-}
+/* SVG, contact styling */
+.bi{ padding: 12px;}
+.bi:hover{ color: var(--darkAccent);}
 
+.btn{
+  font-size: calc(0.5rem + 0.7vw);
+}
 .btn:hover{
   background-color: var(--brightAccent);
 }
@@ -50,8 +50,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-.btn{
-  font-size: calc(0.5rem + 0.7vw);
 }

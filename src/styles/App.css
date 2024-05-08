@@ -1,53 +1,43 @@
 @import url('colors.css');
 
-.content {
-  margin: 0 5%;
-}
-
-.navbar-toggler {
-    border: none;
-}
+.content { margin: 0 5%; }
 
 section{
   margin: 60px 20px;
   padding: 20px;
 }
 
-img.mirror{
-    transform: rotateY(180deg);
-}
+img.mirror{ transform: rotateY(180deg); }
+
+.hide-me[aria-expanded="true"] {display: none;}
+
+.navbar-toggler { border: none; }
+
+/* Hero styling */
 
 h2.line_text {
     text-align: center;
     display: block;
 }
+
 h2.line_broken {
     text-align: center;
     display: none;
 }
 
-p {
-    text-align: justify;
-}
-
-row-cols-2 col:first-child{
-  width: 250px;
-}
+/* CV styling */
 
 td.companyName{
     width: 60%;
 }
 
+/* Bio styling */
 
 div.biogram{
     padding: 40px 20px;
 }
 
-.hide-me[aria-expanded="true"] {display: none;}
-
-button{
-
-}
+/* mobile */
 
 @media only screen and (max-width:1600px){
 
@@ -57,6 +47,5 @@ button{
 }
 
 @media (prefers-reduced-motion: reduce) {
-
 
 }
