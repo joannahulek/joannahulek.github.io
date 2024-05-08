@@ -40,6 +40,7 @@ const dev: CvElement = {
     company: "",
     time: "",
     description: (<p>
+
         <ul>
             <li>Javascript</li>
             <li>TypeScript</li>
