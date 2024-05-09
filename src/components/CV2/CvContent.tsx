@@ -8,7 +8,7 @@ export type CvElement = {
 }
 
 export function getWork(){
-    return [ubs, johu]
+return [ubs, johu]
 }
 
 export function workMore(){
@@ -39,35 +39,19 @@ const dev: CvElement = {
     label: "Software Development",
     company: "",
     time: "",
-    description: (<p>
-
-        <ul>
-            <li>Javascript</li>
-            <li>TypeScript</li>
-            <li>React</li>
-            <li>Bootstrap</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>GIT, GitHub, GitLab</li>
-            <li>JSON</li>
-        </ul>
-    </p>)
+    description: (<>{renderSkills(
+        ["Javascript", "TypeScript", "React", "Bootstrap", "HTML", "CSS", "JSON", "GIT","GitHub", "GitLab"]
+    )}</>)
 }
 
 const soft: CvElement = {
     label: "Soft Skills",
     company: "",
     time: "",
-    description: (<p>
-        <ul>
-            <li>Agile</li>
-            <li>Kanban</li>
-            <li>Scrum</li>
-            <li>Public Speaking</li>
-        </ul>
-    </p>)
+    description: (<>{renderSkills(
+        ["Agile", "Kanban", "Scrum", "Public Speaking", "Empathy", "Knowledge Sharing"]
+    )}</>)
 }
-
 
 // Work items:
 
@@ -77,11 +61,12 @@ const ubs: CvElement = {
     time: "Dec 2018 - Present",
     description: (<>
         <p>
-            Developing and providing full life cycle of web scraping robots with RPA tools and dedicated web scraping platforms based on Python (in 2018-2019) or Java Script (in 2024):
-        <ul>
-            <li>collecting requirements, creating, testing and implementing robots</li>
-            <li>writing documentation</li>
-            <li>regular monitoring and maintenance, adjusting, optimization, processes documentation</li>
+            Developing and providing full life cycle of web scraping robots with RPA tools and dedicated web scraping
+            platforms based on Python (in 2018-2019) or Java Script (in 2024):
+            <ul>
+                <li>collecting requirements, creating, testing and implementing robots</li>
+                <li>writing documentation</li>
+                <li>regular monitoring and maintenance, adjusting, optimization, processes documentation</li>
             <li>decommission of unnecessary robots and projects</li>
         </ul>
     </p><p>
@@ -162,10 +147,7 @@ const rolnik: CvElement = {
     </>)
 }
 
-
-
 // Education items:
-
 
 const im: CvElement = {
     label: "Management",
@@ -185,4 +167,22 @@ const iie: CvElement = {
         Bachelor's degree<br></br>
         specialty: Information economics
         </p>)
+}
+
+
+// Helper functions:
+function renderSkills(skills: string[]){
+    return (
+        <div className="container text-center">
+            <div className="row row-cols-auto">
+                <div className="vr rounded-circle"/>
+            {skills.map((skill) => (
+                <>
+                    <div className="col">{skill}</div>
+                    <div className="vr rounded-circle"/>
+                </>
+            ))}
+        </div>
+</div>
+)
 }

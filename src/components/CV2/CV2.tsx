@@ -41,10 +41,12 @@ function createElement(items: CvElement[]) {
                     <tr>
                         <th colSpan={2}>{item.label}</th>
                     </tr>
-                    <tr>
-                        <td className="companyName">{item.company}</td>
-                        <td>{item.time}</td>
-                    </tr>
+                    {item.company=="" ? <></> : (
+                        <tr>
+                            <td className="companyName">{item.company}</td>
+                            <td>{item.time}</td>
+                        </tr>
+                    )}
                     </thead>
                     <tr>
                         <td colSpan={2}>
