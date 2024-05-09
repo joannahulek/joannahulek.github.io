@@ -12,10 +12,11 @@ function Hero(props: Props){
             <div className="row align-items-center g-5 py-5">
                 <div className="col-lg-9">
                     <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-center">Joanna Hulek</h1>
-                    <h2 className="line_text">Frontend Developer & Agile Practitioner</h2>
+                    <h2 className="line_text">Frontend Developer & Scrum Master</h2>
                     <h2 className="line_broken">Frontend Developer</h2>
-                    <h2 className="line_broken">Agile Practitioner · Speaker</h2>
-                        <img src={image} className="hero mx-lg-auto img-fluid d-block d-md-none" alt="Joanna Hulek"
+                    <h2 className="line_broken">Scrum Master</h2>
+                    <h2 className="line_broken">Speaker</h2>
+                    <img src={image} className="hero mx-lg-auto img-fluid d-block d-md-none" alt="Joanna Hulek"
                          title="by Joanna Dzierzbicka Fotografia" width="100%"
                          loading="lazy"/>
                     <section>
@@ -34,7 +35,7 @@ function Hero(props: Props){
                     </div>
                 </div>
                 <div className="col-10 col-sm-6 col-lg-3">
-                    <img src={image} className="hero d-block mx-lg-auto img-fluid d-none d-md-block" alt="Joanna Hulek"
+                <img src={image} className="hero d-block mx-lg-auto img-fluid d-none d-md-block" alt="Joanna Hulek"
                          title="by Joanna Dzierzbicka Fotografia" width="100%"
                          loading="lazy"/>
                 </div>
