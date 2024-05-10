@@ -175,14 +175,14 @@ function renderSkills(skills: string[]){
     return (
         <div className="container text-center">
             <div className="row row-cols-auto">
-                <div className="vr rounded-circle"/>
-            {skills.map((skill) => (
-                <>
-                    <div className="col">{skill}</div>
-                    <div className="vr rounded-circle"/>
-                </>
-            ))}
+                <h6>#</h6>
+                {skills.map((skill) => (
+                    <>
+                        <div className="col">{skill}</div>
+                        <h6>#</h6>
+                    </>
+                ))}
+            </div>
         </div>
-</div>
-)
+    )
 }

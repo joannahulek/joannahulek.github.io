@@ -19,9 +19,7 @@ function App() {
               summary={content.summary}
               links={links.main}/>
           <section id="bio"><AboutMe bio={content.bio} links={links.main}/></section>
-                 {/*
-          <section id="portfolio">{Portfolio()}</section>
-                */}
+          {/* <section id="portfolio">{Portfolio()}</section> */}
           <section id="cv">
             {CV2()}
                  {/* ** Resume with content imported from JSON
