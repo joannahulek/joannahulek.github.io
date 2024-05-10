@@ -49,7 +49,7 @@ const soft: CvElement = {
     company: "",
     time: "",
     description: (<>{renderSkills(
-        ["Agile", "Kanban", "Scrum", "Public Speaking", "Empathy", "Knowledge Sharing"]
+        ["Agile", "Kanban", "Scrum", "Public Speaking", "Emotional Intelligence", "Knowledge Sharing"]
     )}</>)
 }
 
