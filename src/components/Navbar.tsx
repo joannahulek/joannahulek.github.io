@@ -3,7 +3,7 @@ function NavElements() {
         <div className="collapse navbar-collapse" id="navbarTogglerElements">
             <ul className="navbar-nav me-auto">
                 <a className="navbar-brand" href="#bio">About Me</a>
-                {/* <a className="navbar-brand" href="#portfolio">Portfolio</a> */}
+                <a className="navbar-brand" href="#portfolio">Portfolio</a>
                 <a className="navbar-brand" href="#cv">Resume</a>
                 <a className="navbar-brand" href="#contact">Contact</a>
             </ul>

@@ -37,6 +37,10 @@ div.biogram{
     padding: 40px 20px;
 }
 
+p.card-text{
+    font-size: calc(0.5rem + 0.5vw);
+}
+
 /* mobile */
 
 @media only screen and (max-width:1600px){
