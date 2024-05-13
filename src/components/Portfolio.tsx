@@ -106,8 +106,7 @@ function Speaker() {
                 <div className="card-body">
                     <h5 className="card-title">Niedziela z Babcią</h5>
                     <h6 className="card-subtitle mb-2 text-body-secondary">2020 - Present</h6>
-                    <p className="card-text">Our family YT channel, created on the initiative of my mother - the titular
-                        grandmother (of my children).</p>
+                    <p className="card-text">Maybe is not IT-related, but our family YY channel, initiated by my mother, the titular grandmother (of my kids), is something I co-create.</p>
                     <a href="https://www.youtube.com/c/NiedzielazBabcia"
                        target="_blank" className="card-link">Niedziela z Babcią on YouTube</a>
                 </div>
@@ -124,7 +123,7 @@ function Writer() {
                 <div className="card-body">
                     <h5 className="card-title">Który język programowania wybrać?</h5>
                     <h6 className="card-subtitle mb-2 text-body-secondary">IT-Leaders.pl · 22 Sep 2017</h6>
-                    <p className="card-text">Essay addressed to people which searching for the best career path for themselves. Especially, for programming beginners.</p>
+                    <p className="card-text">Essay addressed to people which searching for the best career path in IT for themselves. Especially, for programming beginners.</p>
                     <a href="#https://blog.it-leaders.pl/ludzieit-ktory-jezyk-programowania-wybrac-czyli-jak-odnalazlam-swoja-sciezke-kariery/"
                        target="_blank" className="card-link">Read it</a>
                 </div>
@@ -135,7 +134,7 @@ function Writer() {
                 <div className="card-body">
                     <h5 className="card-title">Jak oswoić algorytmy?</h5>
                     <h6 className="card-subtitle mb-2 text-body-secondary">wakeupandcode.pl · 9 Dec 2017</h6>
-                    <p className="card-text">Essay about algorithms in our daily life - how to look at each activity like a programmer and how to learn algorithms.</p>
+                    <p className="card-text">Essay about algorithms in our daily life - what is algorithm and how we used them every day. And how to learn algorithms and look at each activity like a programmer.</p>
                     <a href="https://www.wakeupandcode.pl/jak-oswoic-algorytmy/" target="_blank" className="card-link">Read it</a>
                 </div>
             </div>
