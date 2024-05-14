@@ -40,7 +40,7 @@ const dev: CvElement = {
     company: "",
     time: "",
     description: (<>{renderSkills(
-        ["Javascript", "TypeScript", "React", "Bootstrap", "HTML", "CSS", "JSON", "GIT, GitHub, GitLab"]
+        ["Javascript", "TypeScript", "React", "Bootstrap", "Tailwind CSS", "HTML", "CSS", "JSON", "GIT, GitHub, GitLab"]
     )}</>)
 }
 
