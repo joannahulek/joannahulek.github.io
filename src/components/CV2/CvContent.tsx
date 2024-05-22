@@ -49,7 +49,7 @@ const soft: CvElement = {
     company: "",
     time: "",
     description: (<>{renderSkills(
-        ["Agile", "Kanban", "Scrum", "Public Speaking", "Emotional Intelligence", "Knowledge Sharing"]
+        ["Agile", "Kanban", "Scrum", "Public Speaking", "Emotional Intelligence", "Empathy", "Knowledge Sharing"]
     )}</>)
 }
 
@@ -80,7 +80,7 @@ const ubs: CvElement = {
     <p>Basic analysis and quality control of data (with SQL) and cooperation with teams involved in further analysis and data processing.</p>
     <p>Developing and maintaining tools for web miners with using Python.</p>
     <p>Audit and improving processes of handling robots and data. Implementation and adjusting new solutions.</p>
-    <p>PProviding trainings for coworkers, onboarding new joiners in team as a onboarding buddy.</p>
+    <p>Providing trainings for coworkers, onboarding new joiners in team as a onboarding buddy.</p>
     <p>Implementation of agile solutions (Scrum-based) and project management in R&D projects.</p>
     </>)
 }

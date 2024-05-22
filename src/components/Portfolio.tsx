@@ -11,12 +11,12 @@ function Portfolio(){
                 {Speaker(cardHeight)}
             </div>
             <div className="carousel-item">
-                <h3>Articles written</h3>
-                {Writer(cardHeight)}
-            </div>
-            <div className="carousel-item">
                 <h3>Initiatives I participate</h3>
                 {Initiatives(cardHeight)}
+            </div>
+            <div className="carousel-item">
+                <h3>Articles written</h3>
+                {Writer(cardHeight)}
             </div>
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -115,7 +115,8 @@ function Speaker(height:number) {
                 <div className="card-body d-flex flex-column">
                     <h5 className="card-title">Niedziela z Babcią</h5>
                     <h6 className="card-subtitle mb-2 text-body-secondary">2020 - Present</h6>
-                    <p className="card-text">Together with my family, I co-create a YT channel, created on the initiative of my mother - the titular grandmother (of my children). We share ideas and inspirations for spending time creatively with the family - doing art work together, having fun, education.</p>
+                    <p className="card-text">Together with my family, I co-create a YT channel, created on the initiative of my mother - the titular grandmother (of my children). We share ideas and inspirations for spending time creatively with the family - doing art work together, having fun, education.
+                    <br></br>Maybe it's not IT-related topic, but it's very valuable for me.</p>
                     <div className="mt-auto">
                     <a href="https://www.youtube.com/c/NiedzielazBabcia"
                        target="_blank" className="card-link">Niedziela z Babcią on YouTube</a>
@@ -195,7 +196,7 @@ function Initiatives(height:number) {
                 <div className="card-body d-flex flex-column">
                     <h5 className="card-title">Tech Leaders 9th edition</h5>
                     <h6 className="card-subtitle mb-2 text-body-secondary">Mentee · 20 Feb - 20 Jun 2024</h6>
-                    <p className="card-text">As a mentee, I work on analyzing and developing my soft skills and gaining deeper knowledge and understanding of Agile and Scrum, under the supervision of my mentor Monika.
+                    <p className="card-text">As a mentee, I work on analyzing and developing my soft skills and gaining deeper knowledge and understanding of Agile, Scrum and Kanban, under the supervision of my mentor Monika. I focus on develop my career path and self-awareness of my predispositions and leadership competences.
                         <br></br>I also develop technical skills as a Frontend Developer.</p>
                     <div className="mt-auto">
                     <a href="https://techleaders.eu/" target="_blank" className="card-link">Tech Leaders</a>
