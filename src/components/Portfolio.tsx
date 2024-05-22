@@ -196,7 +196,7 @@ function Initiatives(height:number) {
                 <div className="card-body d-flex flex-column">
                     <h5 className="card-title">Tech Leaders 9th edition</h5>
                     <h6 className="card-subtitle mb-2 text-body-secondary">Mentee · 20 Feb - 20 Jun 2024</h6>
-                    <p className="card-text">As a mentee, I work on analyzing and developing my soft skills and gaining deeper knowledge and understanding of Agile, Scrum and Kanban, under the supervision of my mentor Monika. I focus on develop my career path and self-awareness of my predispositions and leadership competences.
+                    <p className="card-text">I work on analyzing and developing my soft skills and gaining deeper knowledge and understanding of Agile, Scrum and Kanban, under the supervision of my mentor Monika. I focus on develop my career path and self-awareness of my predispositions and leadership competences.
                         <br></br>I also develop technical skills as a Frontend Developer.</p>
                     <div className="mt-auto">
                     <a href="https://techleaders.eu/" target="_blank" className="card-link">Tech Leaders</a>
