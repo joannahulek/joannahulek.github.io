@@ -1,12 +1,12 @@
-function Portfolio(){
+export default function Portfolio(){
     let cardHeight = 300
     return(<div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
-            {/* <div className="carousel-item active">
+            <div className="carousel-item active">
                 <h3>Projects</h3>
                 {Projects(cardHeight)}
-            </div> */}
-            <div className="carousel-item active">
+            </div>
+            <div className="carousel-item">
                 <h3>Public speaking</h3>
                 {Speaker(cardHeight)}
             </div>
@@ -32,51 +32,72 @@ function Portfolio(){
     </div>)
 }
 
-export default Portfolio
-
-
 function Projects(height:number) {
     return <div className="row row-cols-1 row-cols-md-3 g-4">
         <div className="col">
             <div className="card" style={{height: `${height}px`}}>
                 <div className="card-body d-flex flex-column">
-                    <h5 className="card-title">Card title 7</h5>
-                    <h6 className="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p className="card-text">Some quick example text to build on the card title and make up
-                        the bulk of the card's content.</p>
-                    <a href="#" className="card-link">Card link</a>
-                    <a href="#" className="card-link">Another link</a>
+                    <h5 className="card-title">JoHu Apps</h5>
+                    <h6 className="card-subtitle mb-2 text-body-secondary">Apr - Nov 2018</h6>
+                    <p className="card-text">Selected Android apps (native) created as part of this project:</p>
+                    <div>
+                        <a href="https://github.com/joannahulek/BabyLangu" target="_blank"
+                           className="card-link">Baby</a>
+                        <a href="https://github.com/joannahulek/BabyLangu-toReform" target="_blank"
+                           className="card-link">Langu</a>
+                        <br></br>
+                        <a href="https://github.com/joannahulek/JoHuComics"
+                           target="_blank" className="card-link">JoHuComics</a>
+                        <br></br>
+                        <a href="https://github.com/joannahulek/johucomics_webserver"
+                           target="_blank" className="card-link">JoHuComics - webserver</a>
+                        <br></br>
+                        <a href="https://github.com/joannahulek/TytusQuiz" target="_blank"
+                           className="card-link">TytusQuiz</a>
+                    </div>
                 </div>
             </div>
         </div>
         <div className="col">
             <div className="card" style={{height: `${height}px`}}>
                 <div className="card-body d-flex flex-column">
-                    <h5 className="card-title">Card title 8</h5>
-                    <h6 className="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p className="card-text">Some quick example text to build on the card title and make up
-                        the bulk of the card's content.</p>
-                    <a href="#" className="card-link">Card link</a>
-                    <a href="#" className="card-link">Another link</a>
+                    <h5 className="card-title">Joanna Hulek - home website</h5>
+                    <h6 className="card-subtitle mb-2 text-body-secondary">April - May 2024</h6>
+                    <p className="card-text">This is the website you are currently visiting:</p>
+                    <a href="https://github.com/joannahulek/joannahulek.github.io"
+                       aria-label="mailto" className="card-link">GitHub Repository</a>
+                    <div className="mt-auto">
+                        <p className="card-text">If you have any questions, suggestions and ideas, or get know about my other projects - feel free to contact me!</p>
+                        <a href="mailto:joanna.hulek@gmail.com?&subject=E-mail%20from%20website&body=Hi%20Joanna,%20"
+                           aria-label="mailto" className="card-link">E-mail</a>
+                        <a href="https://www.linkedin.com/in/joannahulek/" target="_blank"
+                           className="card-link">LinkedIn</a>
+                    </div>
                 </div>
             </div>
         </div>
         <div className="col">
             <div className="card" style={{height: `${height}px`}}>
                 <div className="card-body d-flex flex-column">
-                    <h5 className="card-title">Card title 9</h5>
-                    <h6 className="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p className="card-text">Some quick example text to build on the card title and make up
-                        the bulk of the card's content.</p>
-                    <a href="#" className="card-link">Card link</a>
-                    <a href="#" className="card-link">Another link</a>
+                    <h5 className="card-title">MarKa Tekst</h5>
+                    <h6 className="card-subtitle mb-2 text-body-secondary">23th May 2024 - now</h6>
+                    <p className="card-text">
+                        Together with Marta, we are collaborating to create a minimalist business card that will help
+                        her acquire clients and present her portfolio and offer. </p>
+                    <div className="mt-auto">
+                    <a href="https://marka-tekst.vercel.app/" target="_blank"
+                           className="card-link">MarKa Tekst - business card website</a>
+                        <br></br>
+                        <a href="https://github.com/joannahulek/marka"
+                           target="_blank" className="card-link">GitHub repository</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>;
 }
 
-function Speaker(height:number) {
+function Speaker(height: number) {
     return <div className="row row-cols-1 row-cols-md-3 g-4">
         <div className="col">
             <div className="card" style={{height: `${height}px`}}>
@@ -161,7 +182,7 @@ function Writer(height:number) {
                     <h5 className="card-title">Do you want to cooperate?</h5>
                     <h6 className="card-subtitle mb-2 text-body-secondary">Or do you have an idea? Project?</h6>
                     <p className="card-text">Feel free to ping me! I'm happy to get involved in your initiative!</p>
-                    <div className="mt-auto">
+                    <div>
                     <a href="mailto:joanna.hulek@gmail.com?&subject=E-mail%20from%20website&body=Hi%20Joanna,%20"
                        aria-label="mailto" className="card-link">E-mail</a>
                     <a href="https://www.linkedin.com/in/joannahulek/" target="_blank" className="card-link">LinkedIn</a>
