@@ -12,10 +12,10 @@ function Hero(props: Props){
             <div className="row align-items-center g-5 py-5">
                 <div className="col-lg-9">
                     <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3 text-center">Joanna Hulek</h1>
-                    <h2 className="line_text">Frontend Developer · Speaker · Scrum Master</h2>
-                    <h2 className="line_broken">Frontend Developer</h2>
-                    <h2 className="line_broken">Scrum Master</h2>
-                    <h2 className="line_broken">Speaker</h2>
+                    <h2 className="line_text">Frontend Development · Agile Mindset · Public Speaking</h2>
+                    <h2 className="line_broken">Frontend Development</h2>
+                    <h2 className="line_broken">Agile Mindset</h2>
+                    <h2 className="line_broken">Public Speaking</h2>
                     <img src={image} className="hero mx-lg-auto img-fluid d-block d-md-none" alt="Joanna Hulek"
                          title="by Joanna Dzierzbicka Fotografia" width="100%"
                          loading="lazy"/>
