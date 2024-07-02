@@ -4,8 +4,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import AboutMe from "./components/Bio";
 import Portfolio from "./components/Portfolio";
-import Resume from "./components/CV";
-import CV2 from './components/CV2/CV2';
+import CV from './components/CV';
 import Contact from "./components/Contact";
 import content from "./components/content/content.json"
 import links from "./components/content/links.json"
@@ -22,7 +21,7 @@ function App() {
           <section id="portfolio">{Portfolio()}</section>
           <section id="cv">
               <h1>My Resume</h1>
-            {CV2()}
+            {CV()}
                  {/* ** Resume with content imported from JSON
             <Resume work={resume.work} education={resume.education} />
                   */}

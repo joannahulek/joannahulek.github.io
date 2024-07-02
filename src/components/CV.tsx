@@ -1,48 +1,80 @@
-interface Props {
-    work: string[][][];
-    education: string[][][];
-}
+import {
+    CvElement,
+    getWork, workMore,
+    getEducation, eduMore,
+    getSkills, skillsMore
+} from "./content/CvContent";
 
-function Resume (props: Props) {
+function CV () {
     return (
         <div>
             <hr></hr>
-            {renderTable("Work Experience", props.work)}
+            {renderTable("Work Experience", getWork(), workMore())}
             <hr></hr>
-            {renderTable("Education", props.education)}
+            {renderTable("Education", getEducation(), eduMore())}
             <hr></hr>
+            {renderTable("Skills", getSkills(), skillsMore())}
+
         </div>
     )
 }
 
-export default Resume
+export default CV
 
-function renderTable(title:string, items:string[][][]) {
+
+function renderTable(title:string, items:CvElement[], moreItems:CvElement[]) {
     return <div className="row">
-        <div className="col"><h2>{title}</h2></div>
-        <div className="col-9">{items.map((item) => (
-                <table className="table">
-                            <thead>
-                    <tr>
-                                <th colSpan={2}>{item[0][0]}</th>
-                            </tr>
-                            <tr>
-                                <td>{item[0][1]}</td>
-                                <td>{item[0][2]}</td>
-                            </tr>
-                            </thead>
-                            <tr>
-                                <td colSpan={2}><p></p>
-                                    {item[1].map((line)=>(
-                                        <p><small>{line}</small></p>
-                                    ))}
-                                </td>
-                            </tr>
-                        </table>
-                    )
-                )
-                }
-                </div>
+        <div className="col"><h3>{title}</h3></div>
+        <div className="col-10">
+            {createElement(items)}
+            {MoreElements(moreItems)}
+        </div>
 
     </div>;
+}
+
+function createElement(items: CvElement[]) {
+    return <>
+        {items.map((item) => (
+                <table className="table">
+                    <thead>
+                    <tr>
+                        <th colSpan={2}>{item.label}</th>
+                    </tr>
+                    {item.company=="" ? <></> : (
+                        <tr>
+                            <td className="companyName">{item.company}</td>
+                            <td>{item.time}</td>
+                        </tr>
+                    )}
+                    </thead>
+                    <tr>
+                        <td colSpan={2}>
+                            <small>{item.description}</small>
+                        </td>
+                    </tr>
+                </table>
+            )
+        )
+        }
+    </>;
+}
+
+function MoreElements(moreItems: CvElement[]){
+    if (moreItems.length==0){return (<></>)}
+    else {
+        return (<>
+            <button className="btn hide-me btn-outline-secondary btn-lg px-4" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Show more
+            </button>
+            <div className="collapse" id="collapseExample">
+                {createElement(moreItems)}
+                <button className="btn btn-outline-secondary btn-lg px-4" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Show less
+                </button>
+            </div>
+        </>)
+    }
 }
