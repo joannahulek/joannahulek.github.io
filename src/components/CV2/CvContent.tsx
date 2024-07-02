@@ -24,7 +24,7 @@ export function eduMore(){
 }
 
 export function getSkills(){
-    return [dev, soft]
+    return [dev, soft, languages]
 }
 
 export function skillsMore(){
@@ -40,7 +40,7 @@ const dev: CvElement = {
     company: "",
     time: "",
     description: (<>{renderSkills(
-        ["Javascript", "TypeScript", "React", "Bootstrap", "Tailwind CSS", "HTML", "CSS", "JSON", "GIT, GitHub, GitLab"]
+        ["JavaScript", "TypeScript", "React", "HTML5", "CSS3", "RWD", "Material Design", "Bootstrap", "Tailwind CSS", "JSON", "OOP", "GIT, GitHub, GitLab"]
     )}</>)
 }
 
@@ -49,7 +49,16 @@ const soft: CvElement = {
     company: "",
     time: "",
     description: (<>{renderSkills(
-        ["Agile", "Kanban", "Scrum", "Public Speaking", "Emotional Intelligence", "Empathy", "Knowledge Sharing"]
+        ["Agile", "Kanban", "Scrum", "Public Speaking", "Emotional Intelligence", "Empathy", "Teamwork", "Knowledge Sharing"]
+    )}</>)
+}
+
+const languages: CvElement = {
+    label: "Languages",
+    company: "",
+    time: "",
+    description: (<>{renderSkills(
+        ["Polish (Native)", "English (B2)"]
     )}</>)
 }
 
@@ -62,7 +71,7 @@ const ubs: CvElement = {
     description: (<>
         <p>
             Developing and providing full life cycle of web scraping robots with RPA tools and dedicated web scraping
-            platforms based on Python (in 2018-2019) or Java Script (in 2024):
+            platforms based on Python (in 2018-2019) or JavaScript (in 2024):
             <ul>
                 <li>collecting requirements, creating, testing and implementing robots</li>
                 <li>writing documentation</li>
@@ -70,7 +79,7 @@ const ubs: CvElement = {
             <li>decommission of unnecessary robots and projects</li>
         </ul>
     </p><p>
-        Analizyng websites and web applications in terms of:
+        Analyzing  websites and web applications in terms of:
         <ul>
             <li>architecture, structure</li>
             <li>used technologies</li>
@@ -81,7 +90,7 @@ const ubs: CvElement = {
     <p>Developing and maintaining tools for web miners with using Python.</p>
     <p>Audit and improving processes of handling robots and data. Implementation and adjusting new solutions.</p>
     <p>Providing trainings for coworkers, onboarding new joiners in team as a onboarding buddy.</p>
-    <p>Implementation of agile solutions (Scrum-based) and project management in R&D projects.</p>
+    <p>Implementing agile project management in R&D projects.</p>
     </>)
 }
 
@@ -94,8 +103,11 @@ const johu: CvElement = {
         Start-up within the Akademickie Inkubatory Przedsiębiorczości (AIP).<br></br>
         Brand created to implement ideas that emerged during my participation in the <a href="https://drive.google.com/file/d/13VpLExOIoHG8hxaV-c5ikUBzWsHxcuKZG5g8fJchkzntT2DtjcnzaXe5Ix8vnXT0XLCJyI2Yr9xpYCI-/view">Android Basics Nanodegree by Google</a>.
     </p><p>
-      Creating, designing and implementation of mobile applications for Android (for versions Nougat, Oreo, Pie).
-    </p>
+        <ul>
+            <li>Designing mobile applications in accordance with Google Material Design standards.</li>
+            <li>Developing and implementing native Android apps (versions Nougat, Oreo, Pie) using Java and XML.</li>
+        </ul>
+        </p>
     </>)
 }
 
