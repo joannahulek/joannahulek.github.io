@@ -108,6 +108,14 @@ const johu: CvElement = {
             <li>Developing and implementing native Android apps (versions Nougat, Oreo, Pie) using Java and XML.</li>
         </ul>
         </p>
+    <p>Related projects:
+    <ul>
+        <li><a href="https://github.com/joannahulek/BabyLangu" target="_blank">Baby</a><a href="https://github.com/joannahulek/BabyLangu-toReform" target="_blank">Langu</a> - App for create a commemorate dictionary of kid's first words</li>
+        <li><a href="https://github.com/joannahulek/JoHuComics" target="_blank">JoHuComics</a> and <a href="https://github.com/joannahulek/johucomics_webserver" target="_blank">JoHuComics - webserver</a> - App for collecting favorite comics</li>
+        <li><a href="https://github.com/joannahulek/TytusQuiz" target="_blank">TytusQuiz</a> - Simple Android app with quiz about knowledge of "Tytus Romek i A'Tomek" comic books series</li>
+        <li><a href="https://github.com/joannahulek/TarnowTourGuide" target="_blank">Tarnów Tour Guide</a> - An application facilitating sightseeing in the city of Tarnów - a list of monuments with descriptions</li>
+    </ul>
+    </p>
     </>)
 }
 
