@@ -51,7 +51,7 @@ function RenderItems(items:PortfolioItem[]) {
 
 // previous version below (I left it just to extract content from there)
 
-export function Portfolio2(){
+function Portfolio2(){
     let cardHeight = 300
     return(<div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
@@ -71,16 +71,6 @@ export function Portfolio2(){
                 {Writer(cardHeight)}
             </div>
         </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-        </button>
     </div>)
 }
 
@@ -101,23 +91,7 @@ function Speaker(height: number) {
                 </div>
             </div>
         </div>
-        <div className="col">
-            <div className="card" style={{height: `${height}px`}}>
-                <div className="card-body d-flex flex-column">
-                    <h5 className="card-title">Czy komputery potrafią robić kanapki?</h5>
-                    <h6 className="card-subtitle mb-2 text-body-secondary">Koderek · 26 May 2018 & Digit4Kids · 24 Oct
-                        2020</h6>
-                    <p className="card-text">Workshops on the basics of programming, during which children learned how to build algorithms in practice. We focused on creating clear, precise instructions. Depending on the age group of the participants, they also learned the basics of flowcharts.
-                        <br></br><i>Audience: Kids between 4 and 12 y.o.</i></p>
-                    <div className="mt-auto">
-                    <a href="https://koderek.edu.pl/index20180526.html" target="_blank"
-                       className="card-link">Koderek</a>
-                    <a href="https://www.eventbrite.co.uk/e/digit4kids-light-czy-komputery-potrafia-robic-kanapki-tickets-123727360867?fbclid=IwZXh0bgNhZW0CMTAAAR2COW8OY_xu6LtZOGqxANcIMvDv0i9chT9N3Ohnnnrh_1aKKtdKDPtRric_aem_ASuVxjEOvSzHjkN-2AYC6KHLgMV_xdzZ9pI2XxAW-pmYiQsAvJPEITalhHjmvy8Vtgj6cvpg9kip4-zoid7etrsE"
-                       target="_blank" className="card-link">Digit4Kids</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <div className="col">
             <div className="card" style={{height: `${height}px`}}>
                 <div className="card-body d-flex flex-column">
@@ -182,36 +156,6 @@ function Writer(height:number) {
 
 function Initiatives(height:number) {
     return <div className="row row-cols-1 row-cols-md-3 g-4">
-        <div className="col">
-            <div className="card" style={{height: `${height}px`}}>
-                <div className="card-body d-flex flex-column">
-                    <h5 className="card-title">UBS Charity Musical</h5>
-                    <h6 className="card-subtitle mb-2 text-body-secondary">Grand Romance · 2023</h6>
-                    <p className="card-text">As a dancer and theater lover, I joined the cast of the 9th edition of the UBS Charity Musical.
-                        <br></br>During 4 performances at the Variété Theater, we earn over PLN 151,000 for the support and education of the Hearty Foundation's beneficiaries.</p>
-                    <div className="mt-auto">
-                    <a href="https://www.teatrvariete.pl/repertuar/goscinnie/grand-romance"
-                       target="_blank" className="card-link">Variété's repertoire</a>
-                    <br></br>
-                    <a href="https://serdeczna.org/blog/2024/03/22/musical-grand-romance-podsumowanie/"
-                       target="_blank" className="card-link">Summary by Hearty Foundation</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className="col">
-            <div className="card" style={{height: `${height}px`}}>
-                <div className="card-body d-flex flex-column">
-                    <h5 className="card-title">Tech Leaders 9th edition</h5>
-                    <h6 className="card-subtitle mb-2 text-body-secondary">Mentee · 20 Feb - 20 Jun 2024</h6>
-                    <p className="card-text">I work on analyzing and developing my soft skills and gaining deeper knowledge and understanding of Agile, Scrum and Kanban, under the supervision of my mentor Monika. I focus on develop my career path and self-awareness of my predispositions and leadership competences.
-                        <br></br>I also develop technical skills as a Frontend Developer.</p>
-                    <div className="mt-auto">
-                    <a href="https://techleaders.eu/" target="_blank" className="card-link">Tech Leaders</a>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div className="col">
             <div className="card" style={{height: `${height}px`}}>
                 <div className="card-body d-flex flex-column">
