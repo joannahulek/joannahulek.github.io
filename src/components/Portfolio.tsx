@@ -1,10 +1,62 @@
-export default function Portfolio(){
+import {ReactElement} from "react";
+
+export interface PortfolioItem{
+    title: string
+    time: string
+    description: ReactElement
+    link:ReactElement
+}
+
+let cardHeight = 300
+
+export default function Portfolio(category: string, items: PortfolioItem[]){
+    return(<div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
+        <div className="carousel-inner">
+            <div className="carousel-item active">
+                <h3>{category}</h3>
+                {RenderItems(items)}
+            </div>
+        </div>
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+        </button>
+    </div>)
+}
+
+function RenderItems(items:PortfolioItem[]) {
+    return <div className="row row-cols-1 row-cols-md-3 g-4">
+        {items.map((item)=> (
+            <div className="col">
+                <div className="card" style={{height: `${cardHeight}px`}}>
+                    <div className="card-body d-flex flex-column">
+                        <h5 className="card-title">{item.title}</h5>
+                        <h6 className="card-subtitle mb-2 text-body-secondary">{item.time}</h6>
+                        <p className="card-text">{item.description}</p>
+                        <div className="mt-auto">{item.link}</div>
+                    </div>
+                </div>
+            </div>
+        ))}
+    </div>;
+}
+
+
+
+// previous version below (I left it just to extract content from there)
+
+export function Portfolio2(){
     let cardHeight = 300
     return(<div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
             <div className="carousel-item active">
                 <h3>Projects</h3>
-                {Projects(cardHeight)}
             </div>
             <div className="carousel-item">
                 <h3>Public speaking</h3>
@@ -30,71 +82,6 @@ export default function Portfolio(){
             <span className="visually-hidden">Next</span>
         </button>
     </div>)
-}
-
-function Projects(height:number) {
-    return <div className="row row-cols-1 row-cols-md-3 g-4">
-        <div className="col">
-            <div className="card" style={{height: `${height}px`}}>
-                <div className="card-body d-flex flex-column">
-                    <h5 className="card-title">JoHu Apps</h5>
-                    <h6 className="card-subtitle mb-2 text-body-secondary">Apr - Nov 2018</h6>
-                    <p className="card-text">Selected Android apps (native) created as part of this project:</p>
-                    <div>
-                        <a href="https://github.com/joannahulek/BabyLangu" target="_blank"
-                           className="card-link">Baby</a>
-                        <a href="https://github.com/joannahulek/BabyLangu-toReform" target="_blank"
-                           className="card-link">Langu</a>
-                        <br></br>
-                        <a href="https://github.com/joannahulek/JoHuComics"
-                           target="_blank" className="card-link">JoHuComics</a>
-                        <br></br>
-                        <a href="https://github.com/joannahulek/johucomics_webserver"
-                           target="_blank" className="card-link">JoHuComics - webserver</a>
-                        <br></br>
-                        <a href="https://github.com/joannahulek/TytusQuiz" target="_blank"
-                           className="card-link">TytusQuiz</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className="col">
-            <div className="card" style={{height: `${height}px`}}>
-                <div className="card-body d-flex flex-column">
-                    <h5 className="card-title">Joanna Hulek - home website</h5>
-                    <h6 className="card-subtitle mb-2 text-body-secondary">April - May 2024</h6>
-                    <p className="card-text">This is the website you are currently visiting:</p>
-                    <a href="https://github.com/joannahulek/joannahulek.github.io"
-                       aria-label="mailto" className="card-link">GitHub Repository</a>
-                    <div className="mt-auto">
-                        <p className="card-text">If you have any questions, suggestions and ideas, or get know about my other projects - feel free to contact me!</p>
-                        <a href="mailto:joanna.hulek@gmail.com?&subject=E-mail%20from%20website&body=Hi%20Joanna,%20"
-                           aria-label="mailto" className="card-link">E-mail</a>
-                        <a href="https://www.linkedin.com/in/joannahulek/" target="_blank"
-                           className="card-link">LinkedIn</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div className="col">
-            <div className="card" style={{height: `${height}px`}}>
-                <div className="card-body d-flex flex-column">
-                    <h5 className="card-title">MarKa Tekst</h5>
-                    <h6 className="card-subtitle mb-2 text-body-secondary">23th May 2024 - now</h6>
-                    <p className="card-text">
-                        Together with Marta, we are collaborating to create a minimalist business card that will help
-                        her acquire clients and present her portfolio and offer. </p>
-                    <div className="mt-auto">
-                    <a href="https://marka-tekst.vercel.app/" target="_blank"
-                           className="card-link">MarKa Tekst - business card website</a>
-                        <br></br>
-                        <a href="https://github.com/joannahulek/marka"
-                           target="_blank" className="card-link">GitHub repository</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>;
 }
 
 function Speaker(height: number) {
