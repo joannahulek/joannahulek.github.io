@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import AboutMe from "./components/Bio";
-import Portfolio from "./components/Portfolio";
 import Projects from "./components/content/Projects";
 import PublicSpeaking from "./components/content/PublicSpeaking";
 import Initiatives from "./components/content/Initiatives";
@@ -11,7 +10,6 @@ import CV from './components/CV';
 import Contact from "./components/Contact";
 import content from "./components/content/content.json"
 import links from "./components/content/links.json"
-import resume from "./components/content/CV.json"
 
 function App() {
   return (
@@ -21,8 +19,7 @@ function App() {
               summary={content.summary}
               links={links.main}/>
           <section id="bio"><AboutMe bio={content.bio} links={links.main}/></section>
-          <section id="portfolio">{Portfolio()}</section>
-          <section id="projects">{Projects()}</section>
+          <section id="portfolio">{Projects()}</section>
           <section id="public_speaking">{PublicSpeaking()}</section>
           <section id="initiatives">{Initiatives()}</section>
           <section id="cv">
