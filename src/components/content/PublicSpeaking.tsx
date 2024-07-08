@@ -13,7 +13,7 @@ const projects: PortfolioItem[]=[
     },
     {
         title: "Jak zepsułam Scrum? Case Study",
-        time: "webinar | 10th Jun 2024",
+        time: "webinar · 10th Jun 2024",
         description: <>A case study on the most common mistakes when implementing the Scrum framework.
             <ul>
                 <li>An example story of working with Scrum in a team, to show problems and their consequences</li>
