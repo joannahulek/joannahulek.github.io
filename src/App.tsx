@@ -20,8 +20,6 @@ function App() {
               links={links.main}/>
           <section id="bio"><AboutMe bio={content.bio} links={links.main}/></section>
           <section id="portfolio">{Projects()}</section>
-          <section id="public_speaking">{PublicSpeaking()}</section>
-          <section id="initiatives">{Initiatives()}</section>
           <section id="cv">
               <h1>My Resume</h1>
               {CV()}
@@ -29,6 +27,8 @@ function App() {
             <Resume work={resume.work} education={resume.education} />
                   */}
           </section>
+          <section id="public_speaking">{PublicSpeaking()}</section>
+          <section id="initiatives">{Initiatives()}</section>
           <section id="contact"><Contact/></section>
           {Footer()}
       </div>
