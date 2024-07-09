@@ -4,23 +4,14 @@ const projects: PortfolioItem[]=[
     {
         title: "Nasze cele zmieniają się wraz z nami",
         time: "21th Jun 2024",
-        description: <><p>Live speech on Closing Gala of 9th edition of Tech Leaders Mentoring Program.
-            <br></br>
-                The story of my development in this program, about how building self-awareness and competence affects our goals and how strongly we are motivated to act by fulfilling our dreams.
-            </p>
+        description: <><p>Live speech on Closing Gala of 9th edition of Tech Leaders Mentoring Program about my journey in this project.</p>
             <p>From over a hundred mentees, only three were distinguished with the opportunity to give a speech.</p></>,
         link: <></>
     },
     {
         title: "Jak zepsułam Scrum? Case Study",
         time: "webinar · 10th Jun 2024",
-        description: <>A case study on the most common mistakes when implementing the Scrum framework.
-            <ul>
-                <li>An example story of working with Scrum in a team, to show problems and their consequences</li>
-                <li>Presentation of conclusions, drawing attention to mistakes, bad decisions and shortcomings</li>
-                <li>Suggestions for novice Scrum Masters and Scrum teams to facilitate an understanding of Scrum</li>
-            </ul>
-        </>,
+        description: <>A case study on the most common mistakes when implementing the Scrum framework.</>,
         link: <></>
     },
     {
