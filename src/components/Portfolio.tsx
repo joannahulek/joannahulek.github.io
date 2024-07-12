@@ -9,20 +9,28 @@ export interface PortfolioItem{
 
 let cardHeight = 300
 
-export default function Portfolio(category: string, items: PortfolioItem[]){
-    return(<div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
+export default function Portfolio(id: string, category: string, items: PortfolioItem[]){
+    const carouselName = id+'Carousel'
+    const carouselNumber = Math.ceil(items.length/3)
+    return(<div id={carouselName} className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
             <div className="carousel-item active">
                 <h3>{category}</h3>
-                {RenderItems(items)}
+                {RenderItems([items[0], items[1], items[2]])}
             </div>
+            {carouselNumber>1 ? (
+                <div className="carousel-item">
+                <h3>{category}</h3>
+        {RenderItems([items[3], items[4], items[5]])}
+    </div>
+            ):''}
         </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        <button className="carousel-control-prev" type="button" data-bs-target={'#'+carouselName}
                 data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Previous</span>
         </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        <button className="carousel-control-next" type="button" data-bs-target={'#'+carouselName}
                 data-bs-slide="next">
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Next</span>
@@ -76,22 +84,6 @@ function Portfolio2(){
 
 function Speaker(height: number) {
     return <div className="row row-cols-1 row-cols-md-3 g-4">
-        <div className="col">
-            <div className="card" style={{height: `${height}px`}}>
-                <div className="card-body d-flex flex-column">
-                    <h5 className="card-title">Jak się uczyć programowania? - webinar</h5>
-                    <h6 className="card-subtitle mb-2 text-body-secondary">wakeupandcode.pl · 29 Oct 2017</h6>
-                    <p className="card-text">Webinar about how to learning the basics of programming.
-                        <br></br>Is the choice of language so important? How to start? How to learn theory and how to
-                        organize practical
-                        learning. We discusses about workshops, courses, studies, books, events of the IT industry,
-                        mentoring, and working on own projects.
-                        <br></br>
-                        <br></br><i>Conducted together with Joanna Otmianowska.</i></p>
-                </div>
-            </div>
-        </div>
-
         <div className="col">
             <div className="card" style={{height: `${height}px`}}>
                 <div className="card-body d-flex flex-column">

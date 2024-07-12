@@ -37,11 +37,35 @@ const projects: PortfolioItem[]=[
             <br></br>
             <br></br><i>Conducted together with Joanna Otmianowska.</i></>,
         link: <></>
+    },
+    {
+        title: "Jak się uczyć programowania?",
+        time: "wakeupandcode.pl · 29 Oct 2017",
+        description: <>Webinar about how to learning the basics of programming.
+            <br></br>Is the choice of language so important? How to start? How to learn theory and how to
+            organize practical
+            learning. We discusses about workshops, courses, studies, books, events of the IT industry,
+            mentoring, and working on own projects.
+            <br></br>
+            <br></br><i>Conducted together with Joanna Otmianowska.</i></>,
+        link: <></>
+    },
+    {
+        title: "Jak się uczyć programowania?",
+        time: "wakeupandcode.pl · 29 Oct 2017",
+        description: <>Webinar about how to learning the basics of programming.
+            <br></br>Is the choice of language so important? How to start? How to learn theory and how to
+            organize practical
+            learning. We discusses about workshops, courses, studies, books, events of the IT industry,
+            mentoring, and working on own projects.
+            <br></br>
+            <br></br><i>Conducted together with Joanna Otmianowska.</i></>,
+        link: <></>
     }
 ]
 
 export default function PublicSpeaking() {
     return (
-        Portfolio('Public Speaking', projects)
+        Portfolio('publicSpeaking','Public Speaking', projects)
     )
 }

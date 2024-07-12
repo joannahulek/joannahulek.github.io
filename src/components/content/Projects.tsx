@@ -39,6 +39,6 @@ const projects: PortfolioItem[]=[
 
 export default function Projects() {
     return (
-        Portfolio('Projects', projects)
+        Portfolio('projects','Projects', projects)
     )
 }

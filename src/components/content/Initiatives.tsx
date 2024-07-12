@@ -37,6 +37,6 @@ const projects: PortfolioItem[]=[
 
 export default function Initiatives() {
     return (
-        Portfolio('Initiatives I participate', projects)
+        Portfolio('initiatives','Initiatives I participate', projects)
     )
 }
