@@ -25,6 +25,18 @@ const projects: PortfolioItem[]=[
             <a href="https://www.eventbrite.co.uk/e/digit4kids-light-czy-komputery-potrafia-robic-kanapki-tickets-123727360867?fbclid=IwZXh0bgNhZW0CMTAAAR2COW8OY_xu6LtZOGqxANcIMvDv0i9chT9N3Ohnnnrh_1aKKtdKDPtRric_aem_ASuVxjEOvSzHjkN-2AYC6KHLgMV_xdzZ9pI2XxAW-pmYiQsAvJPEITalhHjmvy8Vtgj6cvpg9kip4-zoid7etrsE"
                target="_blank" className="card-link">Digit4Kids</a>
         </>
+    },
+    {
+        title: "Jak się uczyć programowania?",
+        time: "wakeupandcode.pl · 29 Oct 2017",
+        description: <>Webinar about how to learning the basics of programming.
+            <br></br>Is the choice of language so important? How to start? How to learn theory and how to
+            organize practical
+            learning. We discusses about workshops, courses, studies, books, events of the IT industry,
+            mentoring, and working on own projects.
+            <br></br>
+            <br></br><i>Conducted together with Joanna Otmianowska.</i></>,
+        link: <></>
     }
 ]
 
