@@ -12,18 +12,26 @@ let cardHeight = 300
 export default function Portfolio(id: string, category: string, items: PortfolioItem[]){
     const carouselName = id+'Carousel'
     const carouselNumber = Math.ceil(items.length/3)
-    return(<div id={carouselName} className="carousel slide" data-bs-ride="carousel">
+
+    const renderCarouselItems = () => {
+        const carouselItems = [];
+        for (let i = 0; i < carouselNumber; i++) {
+            const start = i * 3;
+            const end = start + 3;
+            const itemsSlice = items.slice(start, end);
+            carouselItems.push(
+                <div className={`carousel-item ${i === 0 ? 'active' : ''}`} key={i}>
+                    {RenderItems(itemsSlice)}
+                </div>
+            );
+        }
+        return carouselItems;
+    };
+
+    return (<div id={carouselName} className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
-            <div className="carousel-item active">
-                <h3>{category}</h3>
-                {RenderItems([items[0], items[1], items[2]])}
-            </div>
-            {carouselNumber>1 ? (
-                <div className="carousel-item">
-                <h3>{category}</h3>
-        {RenderItems([items[3], items[4], items[5]])}
-    </div>
-            ):''}
+            <h3>{category}</h3>
+            {renderCarouselItems()}
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target={'#'+carouselName}
                 data-bs-slide="prev">
@@ -54,7 +62,6 @@ function RenderItems(items:PortfolioItem[]) {
         ))}
     </div>;
 }
-
 
 
 // previous version below (I left it just to extract content from there)
