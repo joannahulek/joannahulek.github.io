@@ -39,27 +39,19 @@ const projects: PortfolioItem[]=[
         link: <></>
     },
     {
-        title: "Jak się uczyć programowania?",
-        time: "wakeupandcode.pl · 29 Oct 2017",
-        description: <>Webinar about how to learning the basics of programming.
-            <br></br>Is the choice of language so important? How to start? How to learn theory and how to
-            organize practical
-            learning. We discusses about workshops, courses, studies, books, events of the IT industry,
-            mentoring, and working on own projects.
-            <br></br>
-            <br></br><i>Conducted together with Joanna Otmianowska.</i></>,
-        link: <></>
+        title: "Niedziela z Babcią",
+        time: "2020 - Present",
+        description: <>Together with my family, I co-create a YT channel, created on the initiative of my mother - the
+            titular grandmother (of my children). We share ideas and inspirations for spending time creatively with the
+            family - doing art work together, having fun, education.
+            <br></br>Maybe it's not IT-related topic, but it's very valuable for me.</>,
+        link: <a href="https://www.youtube.com/c/NiedzielazBabcia"
+                 target="_blank" className="card-link">Niedziela z Babcią on YouTube</a>
     },
     {
-        title: "Jak się uczyć programowania?",
-        time: "wakeupandcode.pl · 29 Oct 2017",
-        description: <>Webinar about how to learning the basics of programming.
-            <br></br>Is the choice of language so important? How to start? How to learn theory and how to
-            organize practical
-            learning. We discusses about workshops, courses, studies, books, events of the IT industry,
-            mentoring, and working on own projects.
-            <br></br>
-            <br></br><i>Conducted together with Joanna Otmianowska.</i></>,
+        title: "",
+        time: "",
+        description: <></>,
         link: <></>
     }
 ]
