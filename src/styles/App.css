@@ -45,6 +45,29 @@ p.card-text{
     bottom: 5px;
 }
 
+/* Portfolio styling */
+
+.custom-carousel-control {
+    width: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brightAccent);
+    font-size: 2rem;
+    border: none;
+    outline: none;
+    z-index: 1;
+}
+
+.carousel-control-prev.custom-carousel-control {
+    left: -5%;
+}
+
+.carousel-control-next.custom-carousel-control {
+    right: -5%;
+}
+
 /* mobile */
 
 @media only screen and (max-width:1600px){

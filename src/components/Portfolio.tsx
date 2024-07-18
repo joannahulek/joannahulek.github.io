@@ -33,22 +33,26 @@ export default function Portfolio(id: string, category: string, items: Portfolio
             <h3>{category}</h3>
             {renderCarouselItems()}
         </div>
-        <button className="carousel-control-prev" type="button" data-bs-target={'#'+carouselName}
-                data-bs-slide="prev">
-        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target={'#'+carouselName}
-                data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-        </button>
+        {carouselNumber>1 ? (
+            <>
+                <button className="carousel-control-prev custom-carousel-control" type="button"
+                        data-bs-target={`#${carouselName}`} data-bs-slide="prev">
+                    <i className="bi bi-chevron-left custom-icon" aria-hidden="true"></i>
+                    <span className="visually-hidden">Previous</span>
+                </button>
+                <button className="carousel-control-next custom-carousel-control" type="button"
+                        data-bs-target={`#${carouselName}`} data-bs-slide="next">
+                    <i className="bi bi-chevron-right custom-icon" aria-hidden="true"></i>
+                    <span className="visually-hidden">Next</span>
+                </button>
+            </>
+        ) : ''}
     </div>)
 }
 
-function RenderItems(items:PortfolioItem[]) {
+function RenderItems(items: PortfolioItem[]) {
     return <div className="row row-cols-1 row-cols-md-3 g-4">
-        {items.map((item)=> (
+        {items.map((item) => (
             <div className="col">
                 <div className="card" style={{height: `${cardHeight}px`}}>
                     <div className="card-body d-flex flex-column">
