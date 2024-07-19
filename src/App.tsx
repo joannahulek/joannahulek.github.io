@@ -27,8 +27,8 @@ function App() {
             <Resume work={resume.work} education={resume.education} />
                   */}
           </section>
-          <section id="public_speaking">{PublicSpeaking()}</section>
           <section id="initiatives">{Initiatives()}</section>
+          <section id="public_speaking">{PublicSpeaking()}</section>
           <section id="contact"><Contact/></section>
           {Footer()}
       </div>

@@ -8,9 +8,9 @@ function NavElements() {
             <ul className="navbar-nav me-auto">
                 <a className="navbar-brand" href="#bio">About Me</a>
                 <a className="navbar-brand" href="#portfolio">Portfolio</a>
-                <a className="navbar-brand" href="#public_speaking">Public Speaking</a>
-                <a className="navbar-brand" href="#initiatives">Other Initiatives</a>
                 <a className="navbar-brand" href="#cv">Resume</a>
+                <a className="navbar-brand" href="#initiatives">Initiatives</a>
+                <a className="navbar-brand" href="#public_speaking">Public Speaking</a>
                 <a className="navbar-brand" href="#contact">Contact</a>
             </ul>
         </div>
@@ -25,7 +25,7 @@ export default Navbar
 
 function TogglerNav() {
     return (
-        <nav className="navbar navbar-expand-lg border-bottom">
+        <nav className="content navbar fixed-top navbar-expand-lg  bg-white border-bottom">
             <div className="container-fluid">
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerElements" aria-controls="navbarTogglerElements"
