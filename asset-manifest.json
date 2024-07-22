@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.551f0e35.css",
-    "main.js": "/static/js/main.f819732c.js",
+    "main.css": "/static/css/main.1243d9f9.css",
+    "main.js": "/static/js/main.661631b8.js",
     "static/js/453.a6c2512f.chunk.js": "/static/js/453.a6c2512f.chunk.js",
     "static/media/hero_photo.jpg": "/static/media/hero_photo.d55037445f69d9733137.jpg",
+    "static/media/MarKa2.jpg": "/static/media/MarKa2.8e022036a061f9bcafdf.jpg",
+    "static/media/MarKa3.jpg": "/static/media/MarKa3.7cceec9bcacd910f5021.jpg",
+    "static/media/ScrumCaseStudy.jpg": "/static/media/ScrumCaseStudy.dbeb1bbd8b40a501a2b3.jpg",
+    "static/media/MarKa1.jpg": "/static/media/MarKa1.b21149bdaebf5d7304b8.jpg",
+    "static/media/Kanapki.jpg": "/static/media/Kanapki.d002c41c8e53517c39d4.jpg",
+    "static/media/TechLeadersClosingGala.jpg": "/static/media/TechLeadersClosingGala.b714bfdbe23aaa3eb29f.jpg",
     "index.html": "/index.html",
-    "main.551f0e35.css.map": "/static/css/main.551f0e35.css.map",
-    "main.f819732c.js.map": "/static/js/main.f819732c.js.map",
+    "main.1243d9f9.css.map": "/static/css/main.1243d9f9.css.map",
+    "main.661631b8.js.map": "/static/js/main.661631b8.js.map",
     "453.a6c2512f.chunk.js.map": "/static/js/453.a6c2512f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.551f0e35.css",
-    "static/js/main.f819732c.js"
+    "static/css/main.1243d9f9.css",
+    "static/js/main.661631b8.js"
   ]
 }
