@@ -1,7 +1,9 @@
 import Portfolio, {PortfolioItem} from "../Portfolio";
 import ImageCarousel from "../images/ImageCarousel";
 import React from "react";
-import TLgala from "../images/portfolio/TLClosingGala.jpg"
+import TLgala from "../images/portfolio/TechLeadersClosingGala.jpg"
+import ScrumCaseStudy from "../images/portfolio/ScrumCaseStudy.jpg"
+import Kanapki from "../images/portfolio/Kanapki.jpg"
 
 const projects: PortfolioItem[]=[
     {
@@ -15,8 +17,8 @@ const projects: PortfolioItem[]=[
                 <div className="col-5">
                     <ImageCarousel
                         images={[TLgala]}
-                        alt="MarKa Tekst - website"
-                        title="MarKa Tekst - website"
+                        alt="Tech Leaders Closing Gala"
+                        title="Tech Leaders Closing Gala"
                         width="100%"
                     />
                 </div>
@@ -27,15 +29,35 @@ const projects: PortfolioItem[]=[
     {
         title: "Jak zepsułam Scrum? Case Study",
         time: "webinar · 10th Jun 2024",
-        description: <>A case study on the most common mistakes when implementing the Scrum framework.</>,
+        description:
+            <>
+                <p>A case study on the most common mistakes when implementing the Scrum framework.</p>
+                <p className="text-center"><ImageCarousel
+                    images={[ScrumCaseStudy]}
+                    alt="Jak zepsułam Scrum? Case Study"
+                    title="Jak zepsułam Scrum? Case Study"
+                    width="50%"
+                /></p>
+            </>,
         link: <></>
     },
     {
         title: "Czy komputery potrafią robić kanapki?",
         time: "Koderek · 26 May 2018 & Digit4Kids · 24 Oct 2020",
-        description: <>
-            Workshops on the basics of programming, during which children learned how to build algorithms in practice. We focused on creating clear, precise instructions. Depending on the age group of the participants, they also learned the basics of flowcharts.
-            <br></br><i>Audience: Kids between 4 and 12 y.o.</i></>,
+        description:
+            <div className="row">
+                <div className="col">
+                    Workshops on the algorithms for kids between 4 and 12 y.o., focused on creating clear, precise instructions. Depending on the age group of the participants, they also learned the basics of flowcharts.
+                </div>
+                <div className="col-5">
+                    <ImageCarousel
+                        images={[Kanapki]}
+                        alt="Czy komputery potrafią robić kanapki? - Digit4Kids 2020"
+                        title="Czy komputery potrafią robić kanapki? - Digit4Kids 2020"
+                        width="100%"
+                    />
+                </div>
+            </div>,
         link: <>
             <a href="https://koderek.edu.pl/index20180526.html" target="_blank" className="card-link">Koderek</a>
             <a href="https://www.eventbrite.co.uk/e/digit4kids-light-czy-komputery-potrafia-robic-kanapki-tickets-123727360867?fbclid=IwZXh0bgNhZW0CMTAAAR2COW8OY_xu6LtZOGqxANcIMvDv0i9chT9N3Ohnnnrh_1aKKtdKDPtRric_aem_ASuVxjEOvSzHjkN-2AYC6KHLgMV_xdzZ9pI2XxAW-pmYiQsAvJPEITalhHjmvy8Vtgj6cvpg9kip4-zoid7etrsE"
