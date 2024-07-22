@@ -1,11 +1,27 @@
 import Portfolio, {PortfolioItem} from "../Portfolio";
+import ImageCarousel from "../images/ImageCarousel";
+import React from "react";
+import TLgala from "../images/portfolio/TLClosingGala.jpg"
 
 const projects: PortfolioItem[]=[
     {
         title: "Nasze cele zmieniają się wraz z nami",
         time: "21th Jun 2024",
-        description: <><p>Live speech on Closing Gala of 9th edition of Tech Leaders Mentoring Program about my journey in this project.</p>
-            <p>From over a hundred mentees, only three were distinguished with the opportunity to give a speech.</p></>,
+        description:
+            <div className="row">
+                <div className="col">
+                    <p>Live speech on Closing Gala of 9th edition of Tech Leaders Mentoring Program about my journey in this project.</p>
+                </div>
+                <div className="col-5">
+                    <ImageCarousel
+                        images={[TLgala]}
+                        alt="MarKa Tekst - website"
+                        title="MarKa Tekst - website"
+                        width="100%"
+                    />
+                </div>
+                <i>From over a hundred mentees, only three were distinguished with the opportunity to give a speech.</i>
+            </div>,
         link: <></>
     },
     {
