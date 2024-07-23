@@ -5,9 +5,10 @@ interface ImageCarouselProps {
     alt: string;
     title: string;
     width: string;
+    height: string;
 }
 
-const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, alt, title, width }) => {
+const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, alt, title, width, height }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     useEffect(() => {
@@ -24,6 +25,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images, alt, title, width
             alt={alt}
             title={title}
             width={width}
+            height={height}
             loading="lazy"
         />
     );
