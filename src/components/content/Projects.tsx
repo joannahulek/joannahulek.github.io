@@ -9,8 +9,8 @@ let MarkaImages = [MarKa1, MarKa2, MarKa3];
 
 const projects: PortfolioItem[] = [
     {
-        title: "Joanna Hulek - My home website",
-        time: "from April 2024",
+        title: <>Joanna Hulek - My home website</>,
+        time: <>from April 2024</>,
         description: <>
             <p>This is the website you are currently visiting:</p>
             <a href="https://github.com/joannahulek/joannahulek.github.io" className="card-link">Project repository</a>
@@ -24,8 +24,8 @@ const projects: PortfolioItem[] = [
         </>
     },
     {
-        title: "MarKa Tekst - business website",
-        time: "May - Jun 2024",
+        title: <>MarKa Tekst - business website</>,
+        time: <>May - Jun 2024</>,
         description:
             <div className="row">
                 <div className="col">
@@ -35,6 +35,7 @@ const projects: PortfolioItem[] = [
                             alt="MarKa Tekst - website"
                             title="MarKa Tekst - website"
                             width="100%"
+                            height=""
                         />
                     </a>
                 </div>
@@ -49,8 +50,8 @@ const projects: PortfolioItem[] = [
         </>
     },
     {
-        title: "Other Projects",
-        time: "",
+        title: <>Other Projects</>,
+        time: <></>,
         description: <>
             <p>
                 I'm working with React, TypeScript, and JavaScript and I've experience in creating responsive websites, focusing on readable code and best practices.

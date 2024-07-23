@@ -4,11 +4,12 @@ import React from "react";
 import TLgala from "../images/portfolio/TechLeadersClosingGala.jpg"
 import ScrumCaseStudy from "../images/portfolio/ScrumCaseStudy.jpg"
 import Kanapki from "../images/portfolio/Kanapki.jpg"
+import FocusPhoto from "../images/focus_photo.jpg"
 
 const projects: PortfolioItem[]=[
     {
-        title: "Nasze cele zmieniają się wraz z nami",
-        time: "21th Jun 2024",
+        title: <>Nasze cele zmieniają się wraz z nami</>,
+        time: <>21th Jun 2024</>,
         description:
             <div className="row">
                 <div className="col">
@@ -20,6 +21,7 @@ const projects: PortfolioItem[]=[
                         alt="Tech Leaders Closing Gala"
                         title="Tech Leaders Closing Gala"
                         width="100%"
+                        height=""
                     />
                 </div>
                 <i>From over a hundred mentees, only three were distinguished with the opportunity to give a speech.</i>
@@ -27,8 +29,8 @@ const projects: PortfolioItem[]=[
         link: <></>
     },
     {
-        title: "Jak zepsułam Scrum? Case Study",
-        time: "webinar · 10th Jun 2024",
+        title: <>Jak zepsułam Scrum? Case Study</>,
+        time: <>webinar · 10th Jun 2024</>,
         description:
             <>
                 <p>A case study on the most common mistakes when implementing the Scrum framework.</p>
@@ -37,13 +39,14 @@ const projects: PortfolioItem[]=[
                     alt="Jak zepsułam Scrum? Case Study"
                     title="Jak zepsułam Scrum? Case Study"
                     width="50%"
+                    height=""
                 /></p>
             </>,
         link: <></>
     },
     {
-        title: "Czy komputery potrafią robić kanapki?",
-        time: "Koderek · 26 May 2018 & Digit4Kids · 24 Oct 2020",
+        title: <>Czy komputery potrafią robić kanapki?</>,
+        time: <>Koderek · 26 May 2018 & Digit4Kids · 24 Oct 2020</>,
         description:
             <div className="row">
                 <div className="col">
@@ -55,6 +58,7 @@ const projects: PortfolioItem[]=[
                         alt="Czy komputery potrafią robić kanapki? - Digit4Kids 2020"
                         title="Czy komputery potrafią robić kanapki? - Digit4Kids 2020"
                         width="100%"
+                        height=""
                     />
                 </div>
             </div>,
@@ -65,8 +69,8 @@ const projects: PortfolioItem[]=[
         </>
     },
     {
-        title: "Jak się uczyć programowania?",
-        time: "wakeupandcode.pl · 29 Oct 2017",
+        title: <>Jak się uczyć programowania?</>,
+        time: <>wakeupandcode.pl · 29 Oct 2017</>,
         description: <>Webinar about how to learning the basics of programming.
             <br></br>Is the choice of language so important? How to start? How to learn theory and how to
             organize practical
@@ -77,8 +81,8 @@ const projects: PortfolioItem[]=[
         link: <></>
     },
     {
-        title: "Niedziela z Babcią",
-        time: "2020 - Present",
+        title: <>Niedziela z Babcią</>,
+        time: <>2020 - Present</>,
         description: <>Together with my family, I co-create a YT channel, created on the initiative of my mother - the
             titular grandmother (of my children). We share ideas and inspirations for spending time creatively with the
             family - doing art work together, having fun, education.
@@ -87,15 +91,37 @@ const projects: PortfolioItem[]=[
                  target="_blank" className="card-link">Niedziela z Babcią on YouTube</a>
     },
     {
-        title: "",
-        time: "",
-        description: <></>,
+        title: <div className="text-center"><i>Do you want to collaborate?</i></div>,
+        time: <div className="text-center"><i>Or do you have an idea? Project?</i></div>,
+            description:
+            <div className="row">
+                <div className="col">
+                    <p className="text-end"><b><a href="mailto:joanna.hulek@gmail.com?&subject=E-mail%20from%20website&body=Hi%20Joanna,%20"
+                             aria-label="mailto" className="card-link">Feel free to contact me!</a></b></p>
+                    <p className="">I'm happy to get involved in your initiative. Not only as a speaker, but also help with organization, content creation, and in the development of your website.</p>
+                    <p className="text-end">
+                        <a href="mailto:joanna.hulek@gmail.com?&subject=E-mail%20from%20website&body=Hi%20Joanna,%20"
+                          aria-label="mailto" className="card-link">E-mail</a>
+                        <a href="https://www.linkedin.com/in/joannahulek/" target="_blank"
+                           className="card-link">LinkedIn</a>
+                    </p>
+                </div>
+                <div className="col-4">
+                    <ImageCarousel
+                        images={[FocusPhoto]}
+                        alt="Joanna Hulek"
+                        title="photo by Joanna Dzierzbicka Fotografia"
+                        width=""
+                        height="200"
+                    />
+                </div>
+            </div>,
         link: <></>
     }
 ]
 
 export default function PublicSpeaking() {
     return (
-        Portfolio('publicSpeaking','Public Speaking', projects)
+        Portfolio('publicSpeaking', 'Public Speaking', projects)
     )
 }

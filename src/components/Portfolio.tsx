@@ -1,8 +1,8 @@
 import {ReactElement} from "react";
 
 export interface PortfolioItem{
-    title: string
-    time: string
+    title: ReactElement
+    time: ReactElement
     description: ReactElement
     link:ReactElement
 }
