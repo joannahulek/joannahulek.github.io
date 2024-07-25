@@ -18,17 +18,15 @@ function Hero(props: Props){
                     <img src={image} className="hero mx-lg-auto img-fluid d-block d-md-none" alt="Joanna Hulek"
                          title="photo by Joanna Dzierzbicka Fotografia" width="100%"
                          loading="lazy"/>
-                    <section>
-                        <p>
-                            I'm <b>addicted to dance</b> and love being surrounded by plants and flowers. <br></br>
-                            I enjoy creating <b>responsive websites</b> and clear, <b>easy-to-maintain</b> solutions.
-                        </p>
-                        <p>
-                            Collaboration, <b>sharing knowledge and experience</b>, and co-creating teams that <i>plays
-                            for one goal</i> are my passions.
-                            That's why the <b>Agile mindset</b> resonates so well with my own <b>values</b>.
-                        </p>
-                    </section>
+                    <p>
+                        I'm addicted to dance, love being surrounded by plants and flowers and enjoy creating <b>responsive websites</b> and clear, <b>easy-to-maintain</b> solutions.
+                    </p>
+                    <p>
+                        I'm developing in <b>React.js</b>, using <b>TypeScript</b> or <b>JavaScript</b>. I also have a background in Java, Python, experience in web scraping and in Android development.
+                    </p>
+                    <p>
+                        Collaboration, sharing knowledge and experience, and co-creating teams that <i>play for one goal</i> are my passions. That's why the <b>Agile mindset</b> resonates so well with my own values.
+                    </p>
                     <div className="d-grid gap-2 d-md-flex justify-content-md-start">
                         {ContactSVG(64)}
                     </div>
