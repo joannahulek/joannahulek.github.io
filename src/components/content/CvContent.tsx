@@ -65,7 +65,7 @@ const languages: CvElement = {
 // Work items:
 
 const ubs: CvElement = {
-    label: "Developer",
+    label: "Software Developer",
     company: "UBS Business Solutions Poland sp. z o.o.",
     time: "Dec 2018 - Present",
     description: (<>
