@@ -40,7 +40,7 @@ const dev: CvElement = {
     company: "",
     time: "",
     description: (<>{renderSkills(
-        ["JavaScript", "TypeScript", "React", "HTML5", "CSS3", "RWD", "Material Design", "Bootstrap", "Tailwind CSS", "JSON", "OOP", "GIT, GitHub, GitLab"]
+        ["React", "JavaScript", "TypeScript", "HTML5", "CSS3", "Responsive Web Design", "Material Design", "Bootstrap", "Tailwind CSS", "JSON", "SQL", "Java", "Python", "Object Oriented Programming", "GIT, GitHub, GitLab"]
     )}</>)
 }
 
@@ -49,7 +49,7 @@ const soft: CvElement = {
     company: "",
     time: "",
     description: (<>{renderSkills(
-        ["Agile", "Kanban", "Scrum", "Public Speaking", "Emotional Intelligence", "Empathy", "Teamwork", "Knowledge Sharing"]
+        ["Agile", "Kanban", "Scrum", "Teamwork", "Knowledge Sharing", "Public Speaking", "Emotional Intelligence", "Empathy"]
     )}</>)
 }
 
@@ -65,7 +65,7 @@ const languages: CvElement = {
 // Work items:
 
 const ubs: CvElement = {
-    label: "Web Miner, Software engineer",
+    label: "Software Developer",
     company: "UBS Business Solutions Poland sp. z o.o.",
     time: "Dec 2018 - Present",
     description: (<>
@@ -90,12 +90,12 @@ const ubs: CvElement = {
     <p>Developing and maintaining tools for web miners with using Python.</p>
     <p>Audit and improving processes of handling robots and data. Implementation and adjusting new solutions.</p>
     <p>Providing trainings for coworkers, onboarding new joiners in team as a onboarding buddy.</p>
-    <p>Implementing agile project management in R&D projects.</p>
+    <p>Agile Project Management in R&D projects.</p>
     </>)
 }
 
 const johu: CvElement = {
-    label: "Founder, Software Developer",
+    label: "Founder, Android Developer",
     company:"JoHu Apps",
     time: "Apr 2018 - Nov 2018",
     description: (<>
@@ -172,7 +172,7 @@ const rolnik: CvElement = {
 const im: CvElement = {
     label: "Management",
     company:"Krakow University of Economics",
-    time: "2012-2015",
+    time: "",
     description: (<p>
         Master's degree<br></br>
         specialty: International Marketing
@@ -182,7 +182,7 @@ const im: CvElement = {
 const iie: CvElement = {
     label: "Information Technology and Econometrics",
     company:"Krakow University of Economics",
-    time: "2007-2012",
+    time: "",
     description: (<p>
         Bachelor's degree<br></br>
         specialty: Information economics
